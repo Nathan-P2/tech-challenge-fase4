@@ -1,0 +1,1346 @@
+{
+  "gerado_em": "2026-11-22T15:17:34",
+  "periodo": {
+    "inicio": "2026-11-19T00:00:00",
+    "horas": 72
+  },
+  "tempo_execucao_s": 458.6,
+  "video": {
+    "sessao_fisioterapia": {
+      "video": "sessao_fisioterapia.mp4",
+      "backend_pose": "yolov8-pose",
+      "resumo": {
+        "repeticoes_abducao": [
+          {
+            "rep": 1,
+            "t": 4.72,
+            "esq": 143.4,
+            "dir": 147.3,
+            "desvio": null
+          },
+          {
+            "rep": 2,
+            "t": 7.52,
+            "esq": 146.6,
+            "dir": 154.7,
+            "desvio": null
+          },
+          {
+            "rep": 3,
+            "t": 10.4,
+            "esq": 150.9,
+            "dir": 158.6,
+            "desvio": null
+          },
+          {
+            "rep": 4,
+            "t": 13.48,
+            "esq": 109.8,
+            "dir": 162.7,
+            "desvio": "assimetria_amplitude"
+          },
+          {
+            "rep": 5,
+            "t": 16.52,
+            "esq": 105.8,
+            "dir": 156.8,
+            "desvio": "assimetria_amplitude"
+          },
+          {
+            "rep": 6,
+            "t": 19.52,
+            "esq": 112.4,
+            "dir": 159.6,
+            "desvio": "assimetria_amplitude"
+          }
+        ],
+        "agachamentos": 14,
+        "quadros": 950,
+        "quadros_com_pose": 761,
+        "duracao_s": 37.96
+      },
+      "eventos": [
+        {
+          "type": "assimetria_amplitude",
+          "start": 11.98,
+          "end": 21.02,
+          "severity": "moderada",
+          "description": "Repetição 4: abdução esq 110° vs dir 163° (Δ 53°); membro esquerdo abaixo da amplitude inicial (24% de perda). | última: Repetição 6: abdução esq 112° vs dir 160° (Δ 47°); membro esquerdo abaixo da amplitude inicial (22% de perda).",
+          "metrics": {
+            "repeticoes": [
+              4,
+              5,
+              6
+            ],
+            "amplitude_base_esq": 145.0,
+            "amplitude_base_dir": 151.0
+          }
+        },
+        {
+          "type": "tremor",
+          "start": 14.68,
+          "end": 22.08,
+          "severity": "moderada",
+          "description": "Oscilação rítmica de 6.0 Hz no punho direito (amplitude 8.9% do tronco) — compatível com tremor.",
+          "metrics": {
+            "lado": "dir",
+            "freq_hz": 6.0,
+            "amp_rel": 0.0893
+          }
+        },
+        {
+          "type": "desequilibrio",
+          "start": 27.96,
+          "end": 29.04,
+          "severity": "moderada",
+          "description": "Inclinação lateral do tronco de até 23° por 1.1s — perda de controle postural.",
+          "metrics": {
+            "inclinacao_max": 22.7
+          }
+        },
+        {
+          "type": "queda",
+          "start": 30.4,
+          "end": 30.72,
+          "severity": "critica",
+          "description": "Transição vertical→horizontal em 0.3s; silhueta passou a horizontal — provável queda.",
+          "metrics": {
+            "inclinacao_max": 52.7,
+            "aspecto_silhueta": 1.58,
+            "pose_perdida": false
+          }
+        },
+        {
+          "type": "paciente_no_chao",
+          "start": 30.8,
+          "end": 37.96,
+          "severity": "alta",
+          "description": "Cabeça/tronco do paciente dentro da zona 'piso' por 7.2s.",
+          "metrics": {
+            "zona": "piso"
+          }
+        },
+        {
+          "type": "imobilidade_pos_queda",
+          "start": 31.76,
+          "end": 37.96,
+          "severity": "critica",
+          "description": "Sem movimento detectável por 6.2s após a queda — possível perda de consciência ou lesão.",
+          "metrics": {
+            "duracao_s": 6.2,
+            "energia_movimento": 0.00712
+          }
+        }
+      ],
+      "objetos_detectados": {
+        "person": {
+          "ocorrencias": 25,
+          "conf_max": 0.923
+        }
+      },
+      "precisao_pose": {
+        "pck": 0.824,
+        "erro_mediano_px": 8.12,
+        "cobertura": 0.801
+      },
+      "avaliacao": {
+        "eventos": [
+          {
+            "evento": "assimetria_amplitude",
+            "detectado": true,
+            "latencia_s": -0.02
+          },
+          {
+            "evento": "tremor",
+            "detectado": true,
+            "latencia_s": -0.32
+          },
+          {
+            "evento": "desequilibrio",
+            "detectado": true,
+            "latencia_s": 0.96
+          },
+          {
+            "evento": "queda",
+            "detectado": true,
+            "latencia_s": 0.4
+          },
+          {
+            "evento": "imobilidade",
+            "detectado": true,
+            "latencia_s": 0.76
+          }
+        ],
+        "recall": 1.0,
+        "falsos_positivos": [],
+        "precisao": 1.0
+      },
+      "video_anotado": "video_anotado.mp4"
+    },
+    "sessao_controle": {
+      "video": "sessao_controle.mp4",
+      "backend_pose": "yolov8-pose",
+      "resumo": {
+        "repeticoes_abducao": [
+          {
+            "rep": 1,
+            "t": 4.72,
+            "esq": 143.4,
+            "dir": 147.3,
+            "desvio": null
+          },
+          {
+            "rep": 2,
+            "t": 7.52,
+            "esq": 146.6,
+            "dir": 154.7,
+            "desvio": null
+          },
+          {
+            "rep": 3,
+            "t": 10.4,
+            "esq": 150.9,
+            "dir": 158.6,
+            "desvio": null
+          },
+          {
+            "rep": 4,
+            "t": 13.24,
+            "esq": 141.9,
+            "dir": 145.9,
+            "desvio": null
+          },
+          {
+            "rep": 5,
+            "t": 16.76,
+            "esq": 140.7,
+            "dir": 143.0,
+            "desvio": null
+          },
+          {
+            "rep": 6,
+            "t": 19.52,
+            "esq": 146.9,
+            "dir": 155.7,
+            "desvio": null
+          }
+        ],
+        "agachamentos": 15,
+        "quadros": 950,
+        "quadros_com_pose": 940,
+        "duracao_s": 37.96
+      },
+      "eventos": [],
+      "objetos_detectados": {
+        "person": {
+          "ocorrencias": 24,
+          "conf_max": 0.935
+        }
+      },
+      "precisao_pose": {
+        "pck": 0.83,
+        "erro_mediano_px": 8.28,
+        "cobertura": 0.989
+      },
+      "avaliacao": {
+        "eventos": [],
+        "recall": 0.0,
+        "falsos_positivos": [],
+        "precisao": 0.0
+      },
+      "video_anotado": "video_anotado.mp4"
+    }
+  },
+  "audio": {
+    "avaliacao": {
+      "fadiga": {
+        "vp": 4,
+        "fp": 0,
+        "fn": 0,
+        "vn": 8,
+        "precisao": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "dificuldade_respiratoria": {
+        "vp": 4,
+        "fp": 0,
+        "fn": 0,
+        "vn": 8,
+        "precisao": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "disartria": {
+        "vp": 4,
+        "fp": 0,
+        "fn": 0,
+        "vn": 8,
+        "precisao": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "wer_medio": 0.234,
+      "wer_por_condicao": {
+        "baseline": 0.047,
+        "controle": 0.011,
+        "fadiga_respiratoria": 0.323,
+        "disartria": 0.556
+      },
+      "recall_termos_criticos_asr": 0.464,
+      "motor_transcricao": [
+        "faster-whisper-small"
+      ],
+      "motor_nlp": [
+        "nlp-local"
+      ]
+    },
+    "cenario": [
+      {
+        "paciente": "P-101",
+        "condicao": "baseline",
+        "momento": "2026-11-19T02:00:00",
+        "transcricao": "Bom dia, doutor, meu nome está na pulseira e eu sei onde estou. Cheguei ontem para fazer a cirurgia do joelho e passei bem a noite. Estou tomando os remédios no horário certo e me alimentando bem. Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade.",
+        "motor": "faster-whisper-small",
+        "indicadores": {
+          "fadiga": 0.0,
+          "dificuldade_respiratoria": 0.0,
+          "disartria": 0.0
+        },
+        "alertas": []
+      },
+      {
+        "paciente": "P-102",
+        "condicao": "baseline",
+        "momento": "2026-11-19T02:12:00",
+        "transcricao": "Bom dia, doutor. Meu nome está na pulseira e eu sei onde estou. Cheguei ontem para fazer a cirurgia do joelho e passei bem à noite. Estou tomando os remédios no ar e o certo e me alimentado bem. Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade.",
+        "motor": "faster-whisper-small",
+        "indicadores": {
+          "fadiga": 0.0,
+          "dificuldade_respiratoria": 0.0,
+          "disartria": 0.088
+        },
+        "alertas": []
+      },
+      {
+        "paciente": "P-103",
+        "condicao": "baseline",
+        "momento": "2026-11-19T02:24:00",
+        "transcricao": "Bom dia, doutor. Meu nome está na pulseira e eu sei onde estou. Cheguei ontem para fazer a cirurgia do joelho e passei bem à noite. Estou tomando os remédios no ar e o certo e me alimentando bem. Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade.",
+        "motor": "faster-whisper-small",
+        "indicadores": {
+          "fadiga": 0.15,
+          "dificuldade_respiratoria": 0.0,
+          "disartria": 0.039
+        },
+        "alertas": []
+      },
+      {
+        "paciente": "P-104",
+        "condicao": "baseline",
+        "momento": "2026-11-19T02:36:00",
+        "transcricao": "Bom dia, doutor. Meu nome está na pulseira e eu sei onde estou. Cheguei ontem para fazer a cirurgia do joelho e passei bem à noite. Estou tomando os remédios no ar e o certo e me alimentando bem. Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade.",
+        "motor": "faster-whisper-small",
+        "indicadores": {
+          "fadiga": 0.15,
+          "dificuldade_respiratoria": 0.0,
+          "disartria": 0.0
+        },
+        "alertas": []
+      },
+      {
+        "paciente": "P-104",
+        "condicao": "controle",
+        "momento": "2026-11-20T00:00:00",
+        "transcricao": "Boa tarde, doutor. Hoje eu estou me sentindo bem melhor. Dormi a noite inteira e a dor do joelho diminuiu bastante. Consegui fazer os exercícios e subir alguns degraus com ajuda. Estou animado e confiante para receber alta nos próximos dias.",
+        "motor": "faster-whisper-small",
+        "indicadores": {
+          "fadiga": 0.0,
+          "dificuldade_respiratoria": 0.0,
+          "disartria": 0.0
+        },
+        "alertas": [
+          "termos_criticos"
+        ]
+      },
+      {
+        "paciente": "P-102",
+        "condicao": "disartria",
+        "momento": "2026-11-20T06:00:00",
+        "transcricao": "A casa e os belonginges de um homem e um a um de um cara. A casa e o homem e o cara nos convidados. A casa e os kimbos que nos convidados. A casa e os kimbos que nos convidados.",
+        "motor": "faster-whisper-small",
+        "indicadores": {
+          "fadiga": 0.396,
+          "dificuldade_respiratoria": 0.11,
+          "disartria": 0.895
+        },
+        "alertas": [
+          "disartria"
+        ]
+      },
+      {
+        "paciente": "P-103",
+        "condicao": "controle",
+        "momento": "2026-11-20T16:00:00",
+        "transcricao": "Boa tarde, doutor. Hoje eu estou me sentindo bem melhor. Dormi a noite inteira e a dor do joelho diminuiu bastante. Consegui fazer os exercícios e subir alguns degraus com ajuda. Estou animado e confiante para receber alta nos próximos dias.",
+        "motor": "faster-whisper-small",
+        "indicadores": {
+          "fadiga": 0.0,
+          "dificuldade_respiratoria": 0.0,
+          "disartria": 0.0
+        },
+        "alertas": [
+          "termos_criticos"
+        ]
+      },
+      {
+        "paciente": "P-101",
+        "condicao": "fadiga_respiratoria",
+        "momento": "2026-11-21T01:00:00",
+        "transcricao": "Doutor, eu estou muito cansado. Desde uma meia-noite, sinto falta de ar. Principalmente quando tento levantar da cama. Tenho uma dor no peito que aperta. E o coração não fica acelerado. Não consegui dormir direito. Estou com medo de piorar.",
+        "motor": "faster-whisper-small",
+        "indicadores": {
+          "fadiga": 0.906,
+          "dificuldade_respiratoria": 0.967,
+          "disartria": 0.438
+        },
+        "alertas": [
+          "fadiga",
+          "dificuldade_respiratoria",
+          "termos_criticos",
+          "sentimento_negativo"
+        ]
+      }
+    ]
+  },
+  "sinais_vitais": {
+    "cenario": {
+      "eventos": 5,
+      "recall": 1.0,
+      "latencia_mediana_min": 5.0,
+      "falsos_alarmes": 0,
+      "falsos_alarmes_por_paciente_dia": 0.0,
+      "precisao_alertas": 1.0,
+      "artefatos": 2,
+      "artefatos_suprimidos": 2,
+      "por_tipo": {
+        "crise_hipertensiva": {
+          "n": 1,
+          "recall": 1.0,
+          "latencia_mediana_min": 5.0
+        },
+        "dessaturacao": {
+          "n": 1,
+          "recall": 1.0,
+          "latencia_mediana_min": 15.0
+        },
+        "deterioracao_sepse": {
+          "n": 1,
+          "recall": 1.0,
+          "latencia_mediana_min": 149.0
+        },
+        "taquicardia": {
+          "n": 2,
+          "recall": 1.0,
+          "latencia_mediana_min": 1.0
+        }
+      },
+      "detalhe": [
+        {
+          "paciente": "P-101",
+          "evento": "dessaturacao",
+          "detectado": true,
+          "latencia_min": 15.0,
+          "alertas": 6
+        },
+        {
+          "paciente": "P-102",
+          "evento": "crise_hipertensiva",
+          "detectado": true,
+          "latencia_min": 5.0,
+          "alertas": 1
+        },
+        {
+          "paciente": "P-103",
+          "evento": "taquicardia",
+          "detectado": true,
+          "latencia_min": 1.0,
+          "alertas": 1
+        },
+        {
+          "paciente": "P-104",
+          "evento": "deterioracao_sepse",
+          "detectado": true,
+          "latencia_min": 149.0,
+          "alertas": 10
+        },
+        {
+          "paciente": "P-106",
+          "evento": "taquicardia",
+          "detectado": true,
+          "latencia_min": 1.0,
+          "alertas": 3
+        }
+      ]
+    },
+    "coorte": {
+      "pacientes": 30,
+      "eventos": 44,
+      "artefatos": 34,
+      "metodos": {
+        "NEWS2": {
+          "eventos": 44,
+          "recall": 0.568,
+          "latencia_mediana_min": 19.0,
+          "falsos_alarmes": 2,
+          "falsos_alarmes_por_paciente_dia": 0.022,
+          "precisao_alertas": 0.931,
+          "artefatos": 34,
+          "artefatos_suprimidos": 34,
+          "por_tipo": {
+            "bradicardia": {
+              "n": 5,
+              "recall": 0.8,
+              "latencia_mediana_min": 3.0
+            },
+            "crise_hipertensiva": {
+              "n": 7,
+              "recall": 0.0,
+              "latencia_mediana_min": null
+            },
+            "dessaturacao": {
+              "n": 7,
+              "recall": 0.857,
+              "latencia_mediana_min": 20.5
+            },
+            "deterioracao_sepse": {
+              "n": 9,
+              "recall": 1.0,
+              "latencia_mediana_min": 467.0
+            },
+            "febre": {
+              "n": 7,
+              "recall": 0.0,
+              "latencia_mediana_min": null
+            },
+            "hipotensao": {
+              "n": 5,
+              "recall": 0.8,
+              "latencia_mediana_min": 3.5
+            },
+            "taquicardia": {
+              "n": 4,
+              "recall": 0.5,
+              "latencia_mediana_min": 2.0
+            }
+          }
+        },
+        "Z-score robusto": {
+          "eventos": 44,
+          "recall": 0.909,
+          "latencia_mediana_min": 6.0,
+          "falsos_alarmes": 1,
+          "falsos_alarmes_por_paciente_dia": 0.011,
+          "precisao_alertas": 0.984,
+          "artefatos": 34,
+          "artefatos_suprimidos": 34,
+          "por_tipo": {
+            "bradicardia": {
+              "n": 5,
+              "recall": 1.0,
+              "latencia_mediana_min": 1.0
+            },
+            "crise_hipertensiva": {
+              "n": 7,
+              "recall": 1.0,
+              "latencia_mediana_min": 5.0
+            },
+            "dessaturacao": {
+              "n": 7,
+              "recall": 1.0,
+              "latencia_mediana_min": 20.0
+            },
+            "deterioracao_sepse": {
+              "n": 9,
+              "recall": 0.556,
+              "latencia_mediana_min": 1175.0
+            },
+            "febre": {
+              "n": 7,
+              "recall": 1.0,
+              "latencia_mediana_min": 23.0
+            },
+            "hipotensao": {
+              "n": 5,
+              "recall": 1.0,
+              "latencia_mediana_min": 3.0
+            },
+            "taquicardia": {
+              "n": 4,
+              "recall": 1.0,
+              "latencia_mediana_min": 1.0
+            }
+          }
+        },
+        "CUSUM sazonal": {
+          "eventos": 44,
+          "recall": 0.591,
+          "latencia_mediana_min": 69.5,
+          "falsos_alarmes": 2,
+          "falsos_alarmes_por_paciente_dia": 0.022,
+          "precisao_alertas": 0.933,
+          "artefatos": 34,
+          "artefatos_suprimidos": 34,
+          "por_tipo": {
+            "bradicardia": {
+              "n": 5,
+              "recall": 0.0,
+              "latencia_mediana_min": null
+            },
+            "crise_hipertensiva": {
+              "n": 7,
+              "recall": 0.0,
+              "latencia_mediana_min": null
+            },
+            "dessaturacao": {
+              "n": 7,
+              "recall": 0.857,
+              "latencia_mediana_min": 41.5
+            },
+            "deterioracao_sepse": {
+              "n": 9,
+              "recall": 1.0,
+              "latencia_mediana_min": 195.0
+            },
+            "febre": {
+              "n": 7,
+              "recall": 0.857,
+              "latencia_mediana_min": 70.5
+            },
+            "hipotensao": {
+              "n": 5,
+              "recall": 1.0,
+              "latencia_mediana_min": 25.0
+            },
+            "taquicardia": {
+              "n": 4,
+              "recall": 0.0,
+              "latencia_mediana_min": null
+            }
+          }
+        },
+        "Isolation Forest": {
+          "eventos": 44,
+          "recall": 0.545,
+          "latencia_mediana_min": 74.0,
+          "falsos_alarmes": 0,
+          "falsos_alarmes_por_paciente_dia": 0.0,
+          "precisao_alertas": 1.0,
+          "artefatos": 34,
+          "artefatos_suprimidos": 34,
+          "por_tipo": {
+            "bradicardia": {
+              "n": 5,
+              "recall": 0.2,
+              "latencia_mediana_min": 8.0
+            },
+            "crise_hipertensiva": {
+              "n": 7,
+              "recall": 0.286,
+              "latencia_mediana_min": 74.0
+            },
+            "dessaturacao": {
+              "n": 7,
+              "recall": 1.0,
+              "latencia_mediana_min": 24.0
+            },
+            "deterioracao_sepse": {
+              "n": 9,
+              "recall": 1.0,
+              "latencia_mediana_min": 377.0
+            },
+            "febre": {
+              "n": 7,
+              "recall": 0.429,
+              "latencia_mediana_min": 96.0
+            },
+            "hipotensao": {
+              "n": 5,
+              "recall": 0.4,
+              "latencia_mediana_min": 5.5
+            },
+            "taquicardia": {
+              "n": 4,
+              "recall": 0.0,
+              "latencia_mediana_min": null
+            }
+          }
+        },
+        "Ensemble (todos)": {
+          "eventos": 44,
+          "recall": 1.0,
+          "latencia_mediana_min": 8.5,
+          "falsos_alarmes": 5,
+          "falsos_alarmes_por_paciente_dia": 0.056,
+          "precisao_alertas": 0.973,
+          "artefatos": 34,
+          "artefatos_suprimidos": 34,
+          "por_tipo": {
+            "bradicardia": {
+              "n": 5,
+              "recall": 1.0,
+              "latencia_mediana_min": 1.0
+            },
+            "crise_hipertensiva": {
+              "n": 7,
+              "recall": 1.0,
+              "latencia_mediana_min": 5.0
+            },
+            "dessaturacao": {
+              "n": 7,
+              "recall": 1.0,
+              "latencia_mediana_min": 15.0
+            },
+            "deterioracao_sepse": {
+              "n": 9,
+              "recall": 1.0,
+              "latencia_mediana_min": 195.0
+            },
+            "febre": {
+              "n": 7,
+              "recall": 1.0,
+              "latencia_mediana_min": 23.0
+            },
+            "hipotensao": {
+              "n": 5,
+              "recall": 1.0,
+              "latencia_mediana_min": 3.0
+            },
+            "taquicardia": {
+              "n": 4,
+              "recall": 1.0,
+              "latencia_mediana_min": 1.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "prescricoes": {
+    "avaliacao": {
+      "esperados": 8,
+      "detectados": 8,
+      "nao_esperados": [],
+      "controle_P105_sem_alerta": true
+    },
+    "alertas": 11
+  },
+  "mobilidade": {
+    "eventos": 5,
+    "recall": 1.0,
+    "latencia_mediana_min": 116.0,
+    "falsos_alarmes": 0,
+    "falsos_alarmes_por_paciente_dia": 0.0,
+    "precisao_alertas": 1.0,
+    "artefatos": 0,
+    "artefatos_suprimidos": 0,
+    "por_tipo": {
+      "agitacao_noturna": {
+        "n": 1,
+        "recall": 1.0,
+        "latencia_mediana_min": 25.0
+      },
+      "declinio_mobilidade": {
+        "n": 2,
+        "recall": 1.0,
+        "latencia_mediana_min": 990.0
+      },
+      "imobilidade": {
+        "n": 1,
+        "recall": 1.0,
+        "latencia_mediana_min": 116.0
+      },
+      "queda": {
+        "n": 1,
+        "recall": 1.0,
+        "latencia_mediana_min": 0.0
+      }
+    },
+    "detalhe": [
+      {
+        "paciente": "P-101",
+        "evento": "declinio_mobilidade",
+        "detectado": true,
+        "latencia_min": 900.0,
+        "alertas": 1
+      },
+      {
+        "paciente": "P-102",
+        "evento": "imobilidade",
+        "detectado": true,
+        "latencia_min": 116.0,
+        "alertas": 2
+      },
+      {
+        "paciente": "P-103",
+        "evento": "queda",
+        "detectado": true,
+        "latencia_min": 0.0,
+        "alertas": 2
+      },
+      {
+        "paciente": "P-103",
+        "evento": "agitacao_noturna",
+        "detectado": true,
+        "latencia_min": 25.0,
+        "alertas": 1
+      },
+      {
+        "paciente": "P-104",
+        "evento": "declinio_mobilidade",
+        "detectado": true,
+        "latencia_min": 1080.0,
+        "alertas": 1
+      }
+    ]
+  },
+  "fusao": {
+    "esperado": {
+      "P-101": "suspeita_insuficiencia_respiratoria",
+      "P-102": "suspeita_avc",
+      "P-103": "queda_com_repercussao",
+      "P-104": "suspeita_sepse"
+    },
+    "obtido": {
+      "P-101": [
+        "suspeita_insuficiencia_respiratoria",
+        "risco_medicamentoso_paciente_instavel"
+      ],
+      "P-102": [
+        "risco_medicamentoso_paciente_instavel",
+        "suspeita_avc"
+      ],
+      "P-103": [
+        "queda_com_repercussao",
+        "risco_medicamentoso_paciente_instavel"
+      ],
+      "P-104": [
+        "suspeita_sepse"
+      ],
+      "P-105": [],
+      "P-106": []
+    },
+    "acertos": 4,
+    "controle_P105_sem_fusao": true,
+    "alertas": [
+      {
+        "patient_id": "P-102",
+        "source": "fusao",
+        "type": "risco_medicamentoso_paciente_instavel",
+        "severity": "alta",
+        "message": "Risco medicamentoso em paciente instável: evidências concordantes em prescricao, sinais_vitais — [prescricao] aas + varfarina: risco aumentado de sangramento.; [sinais_vitais] Elevação súbita de PAS: 162 (linha de base 111, z = +11.5).",
+        "timestamp": "2026-11-20T05:05:00",
+        "score": 1.0,
+        "evidence": {
+          "regra": "Risco medicamentoso em paciente instável",
+          "conduta": "Farmácia clínica e médico assistente devem revisar a prescrição imediatamente.",
+          "evidencias": [
+            {
+              "origem": "prescricao",
+              "tipo": "duplicidade_terapeutica",
+              "gravidade": "alta",
+              "momento": "2026-11-19T20:00:00",
+              "mensagem": "enoxaparina prescrito com varfarina ativo(s) — duplicidade de anticoagulante."
+            },
+            {
+              "origem": "prescricao",
+              "tipo": "interacao_medicamentosa",
+              "gravidade": "alta",
+              "momento": "2026-11-19T21:00:00",
+              "mensagem": "aas + varfarina: risco aumentado de sangramento."
+            },
+            {
+              "origem": "sinais_vitais",
+              "tipo": "hipertensao",
+              "gravidade": "alta",
+              "momento": "2026-11-20T05:05:00",
+              "mensagem": "Elevação súbita de PAS: 162 (linha de base 111, z = +11.5)."
+            }
+          ],
+          "modalidades": [
+            "prescricao",
+            "sinais_vitais"
+          ]
+        },
+        "end": null,
+        "id": "4fb5b94791",
+        "acao_recomendada": "Avaliação médica em até 15 minutos."
+      },
+      {
+        "patient_id": "P-102",
+        "source": "fusao",
+        "type": "suspeita_avc",
+        "severity": "critica",
+        "message": "Suspeita de AVC (protocolo AVC): evidências concordantes em audio, sinais_vitais — [audio] Disartria (fala arrastada/instável) na voz (escore 0.90): instabilidade de F0 (4.397 vs 2.988), voz mais ruidosa (HNR) (11.378 vs 17.858), perda de nitidez articulatória (0.043 vs 0.078).; [sinais_vitais] Elevação súbita de PAS: 162 (linha de base 111, z = +11.5).",
+        "timestamp": "2026-11-20T06:00:00",
+        "score": 1.0,
+        "evidence": {
+          "regra": "Suspeita de AVC (protocolo AVC)",
+          "conduta": "Acionar protocolo AVC: escala NIHSS, TC de crânio imediata, glicemia; revisar anticoagulação.",
+          "evidencias": [
+            {
+              "origem": "sinais_vitais",
+              "tipo": "hipertensao",
+              "gravidade": "alta",
+              "momento": "2026-11-20T05:05:00",
+              "mensagem": "Elevação súbita de PAS: 162 (linha de base 111, z = +11.5)."
+            },
+            {
+              "origem": "audio",
+              "tipo": "disartria",
+              "gravidade": "alta",
+              "momento": "2026-11-20T06:00:00",
+              "mensagem": "Disartria (fala arrastada/instável) na voz (escore 0.90): instabilidade de F0 (4.397 vs 2.988), voz mais ruidosa (HNR) (11.378 vs 17.858), perda de nitidez articulatória (0.043 vs 0.078)."
+            }
+          ],
+          "modalidades": [
+            "audio",
+            "sinais_vitais"
+          ]
+        },
+        "end": null,
+        "id": "a2b68744e1",
+        "acao_recomendada": "Acionar time de resposta rápida imediatamente."
+      },
+      {
+        "patient_id": "P-103",
+        "source": "fusao",
+        "type": "queda_com_repercussao",
+        "severity": "critica",
+        "message": "Queda com repercussão clínica: evidências concordantes em mobilidade, video — [video] Transição vertical→horizontal em 0.3s; silhueta passou a horizontal — provável queda.; [video] Sem movimento detectável por 6.2s após a queda — possível perda de consciência ou lesão.",
+        "timestamp": "2026-11-20T10:00:31",
+        "score": 1.0,
+        "evidence": {
+          "regra": "Queda com repercussão clínica",
+          "conduta": "Avaliação médica à beira-leito, investigar trauma craniano/fratura, reavaliar risco de queda.",
+          "evidencias": [
+            {
+              "origem": "mobilidade",
+              "tipo": "queda",
+              "gravidade": "critica",
+              "momento": "2026-11-20T10:00:00",
+              "mensagem": "Pico de aceleração (100) seguido de 10 min sem movimento — possível queda do leito."
+            },
+            {
+              "origem": "video",
+              "tipo": "queda",
+              "gravidade": "critica",
+              "momento": "2026-11-20T10:00:30",
+              "mensagem": "Transição vertical→horizontal em 0.3s; silhueta passou a horizontal — provável queda."
+            },
+            {
+              "origem": "video",
+              "tipo": "imobilidade_pos_queda",
+              "gravidade": "critica",
+              "momento": "2026-11-20T10:00:31",
+              "mensagem": "Sem movimento detectável por 6.2s após a queda — possível perda de consciência ou lesão."
+            }
+          ],
+          "modalidades": [
+            "mobilidade",
+            "video"
+          ]
+        },
+        "end": null,
+        "id": "b03cb78bb0",
+        "acao_recomendada": "Acionar time de resposta rápida imediatamente."
+      },
+      {
+        "patient_id": "P-103",
+        "source": "fusao",
+        "type": "risco_medicamentoso_paciente_instavel",
+        "severity": "alta",
+        "message": "Risco medicamentoso em paciente instável: evidências concordantes em prescricao, sinais_vitais — [prescricao] ondansetrona + tramadol: redução do efeito analgésico / risco serotoninérgico.; [sinais_vitais] Elevação súbita de FC: 124 (linha de base 89, z = +11.8).",
+        "timestamp": "2026-11-20T11:06:00",
+        "score": 1.0,
+        "evidence": {
+          "regra": "Risco medicamentoso em paciente instável",
+          "conduta": "Farmácia clínica e médico assistente devem revisar a prescrição imediatamente.",
+          "evidencias": [
+            {
+              "origem": "sinais_vitais",
+              "tipo": "taquicardia",
+              "gravidade": "alta",
+              "momento": "2026-11-20T10:02:00",
+              "mensagem": "Elevação súbita de FC: 124 (linha de base 89, z = +11.8)."
+            },
+            {
+              "origem": "prescricao",
+              "tipo": "interacao_medicamentosa",
+              "gravidade": "moderada",
+              "momento": "2026-11-20T11:06:00",
+              "mensagem": "ondansetrona + tramadol: redução do efeito analgésico / risco serotoninérgico."
+            }
+          ],
+          "modalidades": [
+            "prescricao",
+            "sinais_vitais"
+          ]
+        },
+        "end": null,
+        "id": "245169dcb7",
+        "acao_recomendada": "Avaliação médica em até 15 minutos."
+      },
+      {
+        "patient_id": "P-101",
+        "source": "fusao",
+        "type": "suspeita_insuficiencia_respiratoria",
+        "severity": "critica",
+        "message": "Suspeita de insuficiência respiratória: evidências concordantes em audio, sinais_vitais — [audio] Fadiga / cansaço vocal na voz (escore 0.91): queda de intensidade (dB) (-23.756 vs -15.981), lentificação da fala (3.034 vs 4.263), mais pausas por minuto (14.963 vs 9.714). Relato do paciente confirma: fadiga.; [sinais_vitais] Tendência sustentada de piora (CUSUM) em FC↑, SpO₂↓, FR↑ vs. mesmo horário do dia anterior.",
+        "timestamp": "2026-11-21T01:00:00",
+        "score": 1.0,
+        "evidence": {
+          "regra": "Suspeita de insuficiência respiratória",
+          "conduta": "Avaliar via aérea, gasometria e oxigenoterapia; rever sedação/opioides.",
+          "evidencias": [
+            {
+              "origem": "sinais_vitais",
+              "tipo": "dessaturacao",
+              "gravidade": "alta",
+              "momento": "2026-11-20T23:45:00",
+              "mensagem": "Queda súbita de SpO₂: 91 (linha de base 97, z = -8.6)."
+            },
+            {
+              "origem": "sinais_vitais",
+              "tipo": "news2_elevado",
+              "gravidade": "alta",
+              "momento": "2026-11-20T23:51:00",
+              "mensagem": "NEWS2 = 4 por 5 min (SpO₂ 90, FC 91)."
+            },
+            {
+              "origem": "sinais_vitais",
+              "tipo": "padrao_multivariado_anomalo",
+              "gravidade": "moderada",
+              "momento": "2026-11-20T23:59:00",
+              "mensagem": "Combinação incomum de sinais vitais (Isolation Forest): SpO₂ 86 (z -15.7), FR 24 (z +5.4), FC 102 (z +4.7)."
+            },
+            {
+              "origem": "sinais_vitais",
+              "tipo": "taquipneia",
+              "gravidade": "alta",
+              "momento": "2026-11-21T00:01:00",
+              "mensagem": "Elevação súbita de FR: 24 (linha de base 16, z = +5.4)."
+            },
+            {
+              "origem": "sinais_vitais",
+              "tipo": "deterioracao_progressiva",
+              "gravidade": "alta",
+              "momento": "2026-11-21T00:14:00",
+              "mensagem": "Tendência sustentada de piora (CUSUM) em FC↑, SpO₂↓, FR↑ vs. mesmo horário do dia anterior."
+            },
+            {
+              "origem": "audio",
+              "tipo": "fadiga",
+              "gravidade": "critica",
+              "momento": "2026-11-21T01:00:00",
+              "mensagem": "Fadiga / cansaço vocal na voz (escore 0.91): queda de intensidade (dB) (-23.756 vs -15.981), lentificação da fala (3.034 vs 4.263), mais pausas por minuto (14.963 vs 9.714). Relato do paciente confirma: fadiga."
+            }
+          ],
+          "modalidades": [
+            "audio",
+            "sinais_vitais"
+          ]
+        },
+        "end": null,
+        "id": "964e2ee3ea",
+        "acao_recomendada": "Acionar time de resposta rápida imediatamente."
+      },
+      {
+        "patient_id": "P-101",
+        "source": "fusao",
+        "type": "risco_medicamentoso_paciente_instavel",
+        "severity": "alta",
+        "message": "Risco medicamentoso em paciente instável: evidências concordantes em audio, prescricao, sinais_vitais — [prescricao] midazolam + morfina: depressão respiratória (opioide + benzodiazepínico).; [audio] Dificuldade respiratória na voz (escore 0.97): frases curtas (2.433 vs 4.36), inspirações audíveis/min (17.456 vs 0.0), tempo em pausa (0.292 vs 0.059). Relato do paciente confirma: dispneia, dor torácica.",
+        "timestamp": "2026-11-21T02:36:00",
+        "score": 1.0,
+        "evidence": {
+          "regra": "Risco medicamentoso em paciente instável",
+          "conduta": "Farmácia clínica e médico assistente devem revisar a prescrição imediatamente.",
+          "evidencias": [
+            {
+              "origem": "sinais_vitais",
+              "tipo": "dessaturacao",
+              "gravidade": "alta",
+              "momento": "2026-11-20T23:45:00",
+              "mensagem": "Queda súbita de SpO₂: 91 (linha de base 97, z = -8.6)."
+            },
+            {
+              "origem": "sinais_vitais",
+              "tipo": "news2_elevado",
+              "gravidade": "alta",
+              "momento": "2026-11-20T23:51:00",
+              "mensagem": "NEWS2 = 4 por 5 min (SpO₂ 90, FC 91)."
+            },
+            {
+              "origem": "sinais_vitais",
+              "tipo": "padrao_multivariado_anomalo",
+              "gravidade": "moderada",
+              "momento": "2026-11-20T23:59:00",
+              "mensagem": "Combinação incomum de sinais vitais (Isolation Forest): SpO₂ 86 (z -15.7), FR 24 (z +5.4), FC 102 (z +4.7)."
+            },
+            {
+              "origem": "sinais_vitais",
+              "tipo": "taquipneia",
+              "gravidade": "alta",
+              "momento": "2026-11-21T00:01:00",
+              "mensagem": "Elevação súbita de FR: 24 (linha de base 16, z = +5.4)."
+            },
+            {
+              "origem": "sinais_vitais",
+              "tipo": "taquicardia",
+              "gravidade": "alta",
+              "momento": "2026-11-21T00:08:00",
+              "mensagem": "Elevação súbita de FC: 103 (linha de base 81, z = +4.9)."
+            },
+            {
+              "origem": "sinais_vitais",
+              "tipo": "deterioracao_progressiva",
+              "gravidade": "alta",
+              "momento": "2026-11-21T00:14:00",
+              "mensagem": "Tendência sustentada de piora (CUSUM) em FC↑, SpO₂↓, FR↑ vs. mesmo horário do dia anterior."
+            },
+            {
+              "origem": "audio",
+              "tipo": "dificuldade_respiratoria",
+              "gravidade": "critica",
+              "momento": "2026-11-21T01:00:00",
+              "mensagem": "Dificuldade respiratória na voz (escore 0.97): frases curtas (2.433 vs 4.36), inspirações audíveis/min (17.456 vs 0.0), tempo em pausa (0.292 vs 0.059). Relato do paciente confirma: dispneia, dor torácica."
+            },
+            {
+              "origem": "prescricao",
+              "tipo": "interacao_medicamentosa",
+              "gravidade": "alta",
+              "momento": "2026-11-21T02:36:00",
+              "mensagem": "midazolam + morfina: depressão respiratória (opioide + benzodiazepínico)."
+            }
+          ],
+          "modalidades": [
+            "audio",
+            "prescricao",
+            "sinais_vitais"
+          ]
+        },
+        "end": null,
+        "id": "979b1312e2",
+        "acao_recomendada": "Avaliação médica em até 15 minutos."
+      },
+      {
+        "patient_id": "P-104",
+        "source": "fusao",
+        "type": "suspeita_sepse",
+        "severity": "critica",
+        "message": "Suspeita de sepse / deterioração clínica: evidências concordantes em mobilidade, sinais_vitais — [sinais_vitais] Tendência sustentada de piora (CUSUM) em FC↑, Temp↑ vs. mesmo horário do dia anterior.; [mobilidade] Atividade das últimas 12 h = 57% do mesmo período na admissão.",
+        "timestamp": "2026-11-21T06:00:00",
+        "score": 1.0,
+        "evidence": {
+          "regra": "Suspeita de sepse / deterioração clínica",
+          "conduta": "Abrir protocolo sepse: lactato, hemoculturas, antibiótico na 1ª hora, reavaliação hemodinâmica.",
+          "evidencias": [
+            {
+              "origem": "sinais_vitais",
+              "tipo": "deterioracao_febril",
+              "gravidade": "alta",
+              "momento": "2026-11-20T14:29:00",
+              "mensagem": "Tendência sustentada de piora (CUSUM) em FC↑, Temp↑ vs. mesmo horário do dia anterior."
+            },
+            {
+              "origem": "mobilidade",
+              "tipo": "declinio_mobilidade",
+              "gravidade": "moderada",
+              "momento": "2026-11-21T06:00:00",
+              "mensagem": "Atividade das últimas 12 h = 57% do mesmo período na admissão."
+            }
+          ],
+          "modalidades": [
+            "mobilidade",
+            "sinais_vitais"
+          ]
+        },
+        "end": null,
+        "id": "5ad857bb82",
+        "acao_recomendada": "Acionar time de resposta rápida imediatamente."
+      }
+    ],
+    "minutos_ate_fusao": {
+      "P-102": 600.0,
+      "P-103": 0.5,
+      "P-101": 75.0,
+      "P-104": 931.0
+    }
+  },
+  "alertas": {
+    "total": 58,
+    "suprimidos": 2,
+    "por_gravidade": {
+      "alta": 24,
+      "moderada": 19,
+      "info": 2,
+      "baixa": 3,
+      "critica": 10
+    },
+    "por_origem": {
+      "sinais_vitais": 23,
+      "prescricao": 9,
+      "audio": 7,
+      "fusao": 7,
+      "mobilidade": 6,
+      "video": 6
+    }
+  },
+  "pacientes": {
+    "P-101": {
+      "idade": 68,
+      "leito": "UTI-03",
+      "motivo": "Pós-operatório de artroplastia de joelho",
+      "historia": "Evolui com insuficiência respiratória no 3º dia (dessaturação progressiva, fala cansada e entrecortada, prescrição de opioide + benzodiazepínico).",
+      "alertas": 14,
+      "alertas_por_origem": {
+        "sinais_vitais": 6,
+        "audio": 4,
+        "fusao": 2,
+        "prescricao": 1,
+        "mobilidade": 1
+      },
+      "fusao": [
+        "suspeita_insuficiencia_respiratoria",
+        "risco_medicamentoso_paciente_instavel"
+      ],
+      "risco_pico": 1.0,
+      "risco_final": 0.2484,
+      "nivel_final": "baixo"
+    },
+    "P-102": {
+      "idade": 74,
+      "leito": "ENF-12",
+      "motivo": "Fibrilação atrial anticoagulada",
+      "historia": "Crise hipertensiva seguida de disartria e imobilidade — suspeita de AVC; duplicidade de anticoagulantes na véspera.",
+      "alertas": 8,
+      "alertas_por_origem": {
+        "prescricao": 2,
+        "fusao": 2,
+        "mobilidade": 2,
+        "sinais_vitais": 1,
+        "audio": 1
+      },
+      "fusao": [
+        "risco_medicamentoso_paciente_instavel",
+        "suspeita_avc"
+      ],
+      "risco_pico": 0.882,
+      "risco_final": 0.0131,
+      "nivel_final": "baixo"
+    },
+    "P-103": {
+      "idade": 81,
+      "leito": "ENF-07",
+      "motivo": "Reabilitação pós-fratura de fêmur",
+      "historia": "Queda durante a fisioterapia filmada, taquicardia reativa e agitação noturna (delirium).",
+      "alertas": 13,
+      "alertas_por_origem": {
+        "video": 6,
+        "mobilidade": 2,
+        "fusao": 2,
+        "sinais_vitais": 1,
+        "prescricao": 1,
+        "audio": 1
+      },
+      "fusao": [
+        "queda_com_repercussao",
+        "risco_medicamentoso_paciente_instavel"
+      ],
+      "risco_pico": 1.0,
+      "risco_final": 0.0499,
+      "nivel_final": "baixo"
+    },
+    "P-104": {
+      "idade": 59,
+      "leito": "ENF-15",
+      "motivo": "Pneumonia comunitária",
+      "historia": "Deterioração lenta compatível com sepse: FC/Temp/FR sobem e PA cai ao longo de 16 h, mobilidade cai e o antibiótico é escalonado.",
+      "alertas": 16,
+      "alertas_por_origem": {
+        "sinais_vitais": 10,
+        "prescricao": 3,
+        "audio": 1,
+        "mobilidade": 1,
+        "fusao": 1
+      },
+      "fusao": [
+        "suspeita_sepse"
+      ],
+      "risco_pico": 0.935,
+      "risco_final": 0.324,
+      "nivel_final": "moderado"
+    },
+    "P-105": {
+      "idade": 45,
+      "leito": "ENF-02",
+      "motivo": "Pós-operatório de colecistectomia",
+      "historia": "Paciente estável (controle). Dois artefatos de oxímetro que não devem gerar alarme.",
+      "alertas": 2,
+      "alertas_por_origem": {
+        "sinais_vitais": 2
+      },
+      "fusao": [],
+      "risco_pico": 0.0,
+      "risco_final": 0.0,
+      "nivel_final": "baixo"
+    },
+    "P-106": {
+      "idade": 63,
+      "leito": "ENF-09",
+      "motivo": "Diabetes descompensado",
+      "historia": "Taquicardia paroxística breve e erro de prescrição de insulina (10 → 100 UI).",
+      "alertas": 5,
+      "alertas_por_origem": {
+        "sinais_vitais": 3,
+        "prescricao": 2
+      },
+      "fusao": [],
+      "risco_pico": 0.752,
+      "risco_final": 0.0246,
+      "nivel_final": "baixo"
+    }
+  },
+  "physionet": {
+    "pacientes": 800,
+    "obitos": 105,
+    "taxa_obito": 0.131,
+    "auc": {
+      "news2_max": 0.749,
+      "horas_news2_ge5": 0.464,
+      "anomalias_z": 0.508,
+      "if_horas_anomalas": 0.46,
+      "risco_combinado": 0.576,
+      "SAPS-I": 0.669
+    },
+    "media_por_grupo": {
+      "news2_max": {
+        "sobreviventes": 6.28,
+        "obitos": 8.33
+      },
+      "horas_news2_ge5": {
+        "sobreviventes": 2.67,
+        "obitos": 3.3
+      },
+      "anomalias_z": {
+        "sobreviventes": 8.18,
+        "obitos": 8.47
+      },
+      "if_horas_anomalas": {
+        "sobreviventes": 0.97,
+        "obitos": 0.6
+      }
+    }
+  }
+}

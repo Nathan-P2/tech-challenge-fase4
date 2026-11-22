@@ -1,0 +1,210 @@
+[
+  {
+    "arquivo": "P-101_baseline.wav",
+    "paciente": "P-101",
+    "voz": "Luciana",
+    "condicao": "baseline",
+    "duracao_s": 19.34,
+    "rotulos": {
+      "fadiga": 0,
+      "dificuldade_respiratoria": 0,
+      "disartria": 0
+    },
+    "transcricao_referencia": "Bom dia, doutor. Meu nome está na pulseira e eu sei onde estou. Cheguei ontem para fazer a cirurgia do joelho e passei bem a noite. Estou tomando os remédios no horário certo e me alimentando bem. Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade."
+  },
+  {
+    "arquivo": "P-101_controle.wav",
+    "paciente": "P-101",
+    "voz": "Luciana",
+    "condicao": "controle",
+    "duracao_s": 18.23,
+    "rotulos": {
+      "fadiga": 0,
+      "dificuldade_respiratoria": 0,
+      "disartria": 0
+    },
+    "transcricao_referencia": "Boa tarde, doutor. Hoje eu estou me sentindo bem melhor. Dormi a noite inteira e a dor do joelho diminuiu bastante. Consegui fazer os exercícios e subir alguns degraus com ajuda. Estou animado e confiante para receber alta nos próximos dias."
+  },
+  {
+    "arquivo": "P-101_fadiga_respiratoria.wav",
+    "paciente": "P-101",
+    "voz": "Luciana",
+    "condicao": "fadiga_respiratoria",
+    "duracao_s": 26.0,
+    "rotulos": {
+      "fadiga": 1,
+      "dificuldade_respiratoria": 1,
+      "disartria": 0
+    },
+    "transcricao_referencia": "Doutor, eu estou muito cansado. Desde ontem à noite sinto falta de ar, principalmente quando tento levantar da cama. Tenho uma dor no peito que aperta, e o coração fica acelerado. Não consegui dormir direito. Estou com medo de piorar."
+  },
+  {
+    "arquivo": "P-101_disartria.wav",
+    "paciente": "P-101",
+    "voz": "Luciana",
+    "condicao": "disartria",
+    "duracao_s": 16.7,
+    "rotulos": {
+      "fadiga": 0,
+      "dificuldade_respiratoria": 0,
+      "disartria": 1
+    },
+    "transcricao_referencia": "Doutor, desde hoje cedo a minha fala está enrolada. Sinto o braço direito fraco e formigando. Estou um pouco tonto e com a visão embaçada. Tenho dificuldade para engolir a água."
+  },
+  {
+    "arquivo": "P-102_baseline.wav",
+    "paciente": "P-102",
+    "voz": "Flo (Portuguese (Brazil))",
+    "condicao": "baseline",
+    "duracao_s": 18.73,
+    "rotulos": {
+      "fadiga": 0,
+      "dificuldade_respiratoria": 0,
+      "disartria": 0
+    },
+    "transcricao_referencia": "Bom dia, doutor. Meu nome está na pulseira e eu sei onde estou. Cheguei ontem para fazer a cirurgia do joelho e passei bem a noite. Estou tomando os remédios no horário certo e me alimentando bem. Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade."
+  },
+  {
+    "arquivo": "P-102_controle.wav",
+    "paciente": "P-102",
+    "voz": "Flo (Portuguese (Brazil))",
+    "condicao": "controle",
+    "duracao_s": 17.28,
+    "rotulos": {
+      "fadiga": 0,
+      "dificuldade_respiratoria": 0,
+      "disartria": 0
+    },
+    "transcricao_referencia": "Boa tarde, doutor. Hoje eu estou me sentindo bem melhor. Dormi a noite inteira e a dor do joelho diminuiu bastante. Consegui fazer os exercícios e subir alguns degraus com ajuda. Estou animado e confiante para receber alta nos próximos dias."
+  },
+  {
+    "arquivo": "P-102_fadiga_respiratoria.wav",
+    "paciente": "P-102",
+    "voz": "Flo (Portuguese (Brazil))",
+    "condicao": "fadiga_respiratoria",
+    "duracao_s": 25.49,
+    "rotulos": {
+      "fadiga": 1,
+      "dificuldade_respiratoria": 1,
+      "disartria": 0
+    },
+    "transcricao_referencia": "Doutor, eu estou muito cansado. Desde ontem à noite sinto falta de ar, principalmente quando tento levantar da cama. Tenho uma dor no peito que aperta, e o coração fica acelerado. Não consegui dormir direito. Estou com medo de piorar."
+  },
+  {
+    "arquivo": "P-102_disartria.wav",
+    "paciente": "P-102",
+    "voz": "Flo (Portuguese (Brazil))",
+    "condicao": "disartria",
+    "duracao_s": 18.05,
+    "rotulos": {
+      "fadiga": 0,
+      "dificuldade_respiratoria": 0,
+      "disartria": 1
+    },
+    "transcricao_referencia": "Doutor, desde hoje cedo a minha fala está enrolada. Sinto o braço direito fraco e formigando. Estou um pouco tonto e com a visão embaçada. Tenho dificuldade para engolir a água."
+  },
+  {
+    "arquivo": "P-103_baseline.wav",
+    "paciente": "P-103",
+    "voz": "Eddy (Portuguese (Brazil))",
+    "condicao": "baseline",
+    "duracao_s": 18.71,
+    "rotulos": {
+      "fadiga": 0,
+      "dificuldade_respiratoria": 0,
+      "disartria": 0
+    },
+    "transcricao_referencia": "Bom dia, doutor. Meu nome está na pulseira e eu sei onde estou. Cheguei ontem para fazer a cirurgia do joelho e passei bem a noite. Estou tomando os remédios no horário certo e me alimentando bem. Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade."
+  },
+  {
+    "arquivo": "P-103_controle.wav",
+    "paciente": "P-103",
+    "voz": "Eddy (Portuguese (Brazil))",
+    "condicao": "controle",
+    "duracao_s": 17.27,
+    "rotulos": {
+      "fadiga": 0,
+      "dificuldade_respiratoria": 0,
+      "disartria": 0
+    },
+    "transcricao_referencia": "Boa tarde, doutor. Hoje eu estou me sentindo bem melhor. Dormi a noite inteira e a dor do joelho diminuiu bastante. Consegui fazer os exercícios e subir alguns degraus com ajuda. Estou animado e confiante para receber alta nos próximos dias."
+  },
+  {
+    "arquivo": "P-103_fadiga_respiratoria.wav",
+    "paciente": "P-103",
+    "voz": "Eddy (Portuguese (Brazil))",
+    "condicao": "fadiga_respiratoria",
+    "duracao_s": 26.12,
+    "rotulos": {
+      "fadiga": 1,
+      "dificuldade_respiratoria": 1,
+      "disartria": 0
+    },
+    "transcricao_referencia": "Doutor, eu estou muito cansado. Desde ontem à noite sinto falta de ar, principalmente quando tento levantar da cama. Tenho uma dor no peito que aperta, e o coração fica acelerado. Não consegui dormir direito. Estou com medo de piorar."
+  },
+  {
+    "arquivo": "P-103_disartria.wav",
+    "paciente": "P-103",
+    "voz": "Eddy (Portuguese (Brazil))",
+    "condicao": "disartria",
+    "duracao_s": 17.86,
+    "rotulos": {
+      "fadiga": 0,
+      "dificuldade_respiratoria": 0,
+      "disartria": 1
+    },
+    "transcricao_referencia": "Doutor, desde hoje cedo a minha fala está enrolada. Sinto o braço direito fraco e formigando. Estou um pouco tonto e com a visão embaçada. Tenho dificuldade para engolir a água."
+  },
+  {
+    "arquivo": "P-104_baseline.wav",
+    "paciente": "P-104",
+    "voz": "Reed (Portuguese (Brazil))",
+    "condicao": "baseline",
+    "duracao_s": 18.75,
+    "rotulos": {
+      "fadiga": 0,
+      "dificuldade_respiratoria": 0,
+      "disartria": 0
+    },
+    "transcricao_referencia": "Bom dia, doutor. Meu nome está na pulseira e eu sei onde estou. Cheguei ontem para fazer a cirurgia do joelho e passei bem a noite. Estou tomando os remédios no horário certo e me alimentando bem. Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade."
+  },
+  {
+    "arquivo": "P-104_controle.wav",
+    "paciente": "P-104",
+    "voz": "Reed (Portuguese (Brazil))",
+    "condicao": "controle",
+    "duracao_s": 17.16,
+    "rotulos": {
+      "fadiga": 0,
+      "dificuldade_respiratoria": 0,
+      "disartria": 0
+    },
+    "transcricao_referencia": "Boa tarde, doutor. Hoje eu estou me sentindo bem melhor. Dormi a noite inteira e a dor do joelho diminuiu bastante. Consegui fazer os exercícios e subir alguns degraus com ajuda. Estou animado e confiante para receber alta nos próximos dias."
+  },
+  {
+    "arquivo": "P-104_fadiga_respiratoria.wav",
+    "paciente": "P-104",
+    "voz": "Reed (Portuguese (Brazil))",
+    "condicao": "fadiga_respiratoria",
+    "duracao_s": 26.31,
+    "rotulos": {
+      "fadiga": 1,
+      "dificuldade_respiratoria": 1,
+      "disartria": 0
+    },
+    "transcricao_referencia": "Doutor, eu estou muito cansado. Desde ontem à noite sinto falta de ar, principalmente quando tento levantar da cama. Tenho uma dor no peito que aperta, e o coração fica acelerado. Não consegui dormir direito. Estou com medo de piorar."
+  },
+  {
+    "arquivo": "P-104_disartria.wav",
+    "paciente": "P-104",
+    "voz": "Reed (Portuguese (Brazil))",
+    "condicao": "disartria",
+    "duracao_s": 18.39,
+    "rotulos": {
+      "fadiga": 0,
+      "dificuldade_respiratoria": 0,
+      "disartria": 1
+    },
+    "transcricao_referencia": "Doutor, desde hoje cedo a minha fala está enrolada. Sinto o braço direito fraco e formigando. Estou um pouco tonto e com a visão embaçada. Tenho dificuldade para engolir a água."
+  }
+]

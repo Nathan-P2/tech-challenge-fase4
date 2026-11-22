@@ -1,0 +1,165 @@
+{
+  "video": "sessao_fisioterapia.mp4",
+  "backend_pose": "ground-truth",
+  "resumo": {
+    "repeticoes_abducao": [
+      {
+        "rep": 1,
+        "t": 4.48,
+        "esq": 166.3,
+        "dir": 170.4,
+        "desvio": null
+      },
+      {
+        "rep": 2,
+        "t": 7.48,
+        "esq": 172.9,
+        "dir": 171.6,
+        "desvio": null
+      },
+      {
+        "rep": 3,
+        "t": 10.52,
+        "esq": 171.7,
+        "dir": 170.5,
+        "desvio": null
+      },
+      {
+        "rep": 4,
+        "t": 13.48,
+        "esq": 104.0,
+        "dir": 169.2,
+        "desvio": "assimetria_amplitude"
+      },
+      {
+        "rep": 5,
+        "t": 16.48,
+        "esq": 105.5,
+        "dir": 170.8,
+        "desvio": "assimetria_amplitude"
+      },
+      {
+        "rep": 6,
+        "t": 19.48,
+        "esq": 103.2,
+        "dir": 169.5,
+        "desvio": "assimetria_amplitude"
+      }
+    ],
+    "agachamentos": 3,
+    "quadros": 950,
+    "quadros_com_pose": 767,
+    "duracao_s": 37.96
+  },
+  "eventos": [
+    {
+      "type": "assimetria_amplitude",
+      "start": 11.98,
+      "end": 20.98,
+      "severity": "moderada",
+      "description": "Repetição 4: abdução esq 104° vs dir 169° (Δ 65°); membro esquerdo abaixo da amplitude inicial (39% de perda). | última: Repetição 6: abdução esq 103° vs dir 170° (Δ 66°); membro esquerdo abaixo da amplitude inicial (39% de perda).",
+      "metrics": {
+        "repeticoes": [
+          4,
+          5,
+          6
+        ],
+        "amplitude_base_esq": 169.60000000000002,
+        "amplitude_base_dir": 171.0
+      }
+    },
+    {
+      "type": "tremor",
+      "start": 14.44,
+      "end": 22.6,
+      "severity": "moderada",
+      "description": "Oscilação rítmica de 6.0 Hz no punho direito (amplitude 5.8% do tronco) — compatível com tremor.",
+      "metrics": {
+        "lado": "dir",
+        "freq_hz": 6.0,
+        "amp_rel": 0.0579
+      }
+    },
+    {
+      "type": "desequilibrio",
+      "start": 27.92,
+      "end": 29.08,
+      "severity": "moderada",
+      "description": "Inclinação lateral do tronco de até 21° por 1.2s — perda de controle postural.",
+      "metrics": {
+        "inclinacao_max": 21.4
+      }
+    },
+    {
+      "type": "queda",
+      "start": 30.4,
+      "end": 30.72,
+      "severity": "critica",
+      "description": "Transição vertical→horizontal em 0.3s; silhueta passou a horizontal — provável queda.",
+      "metrics": {
+        "inclinacao_max": 50.8,
+        "aspecto_silhueta": 1.58,
+        "pose_perdida": true
+      }
+    },
+    {
+      "type": "paciente_no_chao",
+      "start": 30.84,
+      "end": 37.96,
+      "severity": "alta",
+      "description": "Cabeça/tronco do paciente dentro da zona 'piso' por 7.1s.",
+      "metrics": {
+        "zona": "piso"
+      }
+    },
+    {
+      "type": "imobilidade_pos_queda",
+      "start": 31.76,
+      "end": 37.96,
+      "severity": "critica",
+      "description": "Sem movimento detectável por 6.2s após a queda — possível perda de consciência ou lesão.",
+      "metrics": {
+        "duracao_s": 6.2,
+        "energia_movimento": 0.00712
+      }
+    }
+  ],
+  "objetos_detectados": {},
+  "precisao_pose": {
+    "pck": 1.0,
+    "erro_mediano_px": 1.75,
+    "cobertura": 0.807
+  },
+  "avaliacao": {
+    "eventos": [
+      {
+        "evento": "assimetria_amplitude",
+        "detectado": true,
+        "latencia_s": -0.02
+      },
+      {
+        "evento": "tremor",
+        "detectado": true,
+        "latencia_s": -0.56
+      },
+      {
+        "evento": "desequilibrio",
+        "detectado": true,
+        "latencia_s": 0.92
+      },
+      {
+        "evento": "queda",
+        "detectado": true,
+        "latencia_s": 0.4
+      },
+      {
+        "evento": "imobilidade",
+        "detectado": true,
+        "latencia_s": 0.76
+      }
+    ],
+    "recall": 1.0,
+    "falsos_positivos": [],
+    "precisao": 1.0
+  }
+}

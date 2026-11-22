@@ -1,0 +1,91 @@
+{
+  "video": "sessao_fisioterapia.mp4",
+  "fps": 25,
+  "frames": 950,
+  "resolucao": [
+    640,
+    480
+  ],
+  "referencia": "sala_vazia.png",
+  "zonas": [
+    {
+      "nome": "tapete_exercicio",
+      "tipo": "segura",
+      "bbox": [
+        150,
+        400,
+        490,
+        452
+      ]
+    },
+    {
+      "nome": "piso",
+      "tipo": "proibida",
+      "bbox": [
+        0,
+        330,
+        640,
+        480
+      ]
+    }
+  ],
+  "segmentos": [
+    {
+      "name": "repouso",
+      "start": 0.0,
+      "end": 3.0
+    },
+    {
+      "name": "abducao_ombros",
+      "start": 3.0,
+      "end": 21.0
+    },
+    {
+      "name": "agachamento",
+      "start": 21.0,
+      "end": 30.0
+    },
+    {
+      "name": "queda",
+      "start": 30.0,
+      "end": 31.0
+    },
+    {
+      "name": "imobilidade_pos_queda",
+      "start": 31.0,
+      "end": 38.0
+    }
+  ],
+  "eventos_esperados": [
+    {
+      "tipo": "assimetria_amplitude",
+      "inicio": 12.0,
+      "fim": 21.0,
+      "descricao": "Braço esquerdo atinge ~95° contra ~160° do direito (compensação)."
+    },
+    {
+      "tipo": "tremor",
+      "inicio": 15.0,
+      "fim": 21.0,
+      "descricao": "Tremor de ~6 Hz no membro superior direito."
+    },
+    {
+      "tipo": "desequilibrio",
+      "inicio": 27.0,
+      "fim": 30.0,
+      "descricao": "Inclinação lateral do tronco no último agachamento."
+    },
+    {
+      "tipo": "queda",
+      "inicio": 30.0,
+      "fim": 31.0,
+      "descricao": "Queda lateral para fora do tapete."
+    },
+    {
+      "tipo": "imobilidade",
+      "inicio": 31.0,
+      "fim": 38.0,
+      "descricao": "Paciente imóvel no chão após a queda."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "pacientes": 800,
+  "obitos": 105,
+  "taxa_obito": 0.131,
+  "auc": {
+    "news2_max": 0.749,
+    "horas_news2_ge5": 0.464,
+    "anomalias_z": 0.508,
+    "if_horas_anomalas": 0.46,
+    "risco_combinado": 0.576,
+    "SAPS-I": 0.669
+  },
+  "media_por_grupo": {
+    "news2_max": {
+      "sobreviventes": 6.28,
+      "obitos": 8.33
+    },
+    "horas_news2_ge5": {
+      "sobreviventes": 2.67,
+      "obitos": 3.3
+    },
+    "anomalias_z": {
+      "sobreviventes": 8.18,
+      "obitos": 8.47
+    },
+    "if_horas_anomalas": {
+      "sobreviventes": 0.97,
+      "obitos": 0.6
+    }
+  }
+}

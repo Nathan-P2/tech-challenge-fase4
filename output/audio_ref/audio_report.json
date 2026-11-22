@@ -1,0 +1,5036 @@
+{
+  "consultas": [
+    {
+      "arquivo": "P-101_baseline.wav",
+      "paciente": "P-101",
+      "momento": "2026-11-20T08:00:00",
+      "transcricao": {
+        "texto": "Bom dia, doutor. Meu nome está na pulseira e eu sei onde estou. Cheguei ontem para fazer a cirurgia do joelho e passei bem a noite. Estou tomando os remédios no horário certo e me alimentando bem. Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 19.3426,
+        "tempo_fala_s": 17.06,
+        "taxa_fala_sil_s": 4.2634,
+        "taxa_articulacao_sil_s": 4.6307,
+        "razao_pausas": 0.0588,
+        "pausas_por_min": 9.714,
+        "pausa_media_s": 0.3633,
+        "frase_media_s": 4.36,
+        "irregularidade_ritmo": 0.3504,
+        "f0_media_hz": 190.3311,
+        "f0_desvio_st": 1.9942,
+        "jitter_pct": 1.1186,
+        "shimmer_pct": 11.3391,
+        "hnr_db": 20.3118,
+        "intensidade_db": -15.9807,
+        "centroide_hz": 880.8894,
+        "energia_alta_freq": 0.1119,
+        "respiracoes_audiveis": 0,
+        "respiracoes_por_min": 0.0
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -15.981,
+              "referencia": -20.0,
+              "desvio": -4.019,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 4.263,
+              "referencia": 4.2,
+              "desvio": -0.015,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 190.331,
+              "referencia": 160.0,
+              "desvio": -3.005,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 9.714,
+              "referencia": 13.0,
+              "desvio": -0.253,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "referência populacional"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 9.714,
+              "referencia": 13.0,
+              "desvio": -0.253,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 4.36,
+              "referencia": 3.2,
+              "desvio": -0.363,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 0.0,
+              "referencia": 0.0,
+              "desvio": 0.0,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.059,
+              "referencia": 0.1,
+              "desvio": -0.412,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "referência populacional"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 1.994,
+              "referencia": 2.7,
+              "desvio": -0.261,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 4.631,
+              "referencia": 4.7,
+              "desvio": 0.015,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 20.312,
+              "referencia": 8.0,
+              "desvio": -12.312,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.112,
+              "referencia": 0.1,
+              "desvio": -0.119,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "referência populacional"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "positivo",
+          "scores": {
+            "positivo": 0.667,
+            "neutro": 0.167,
+            "negativo": 0.167
+          },
+          "frases": [
+            {
+              "texto": "Bom dia, doutor",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Meu nome está na pulseira e eu sei onde estou",
+              "sentimento": "neutro"
+            },
+            {
+              "texto": "Cheguei ontem para fazer a cirurgia do joelho e passei bem a noite",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Estou tomando os remédios no horário certo e me alimentando bem",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade",
+              "sentimento": "neutro"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [],
+      "condicao": "baseline",
+      "rotulos": {
+        "fadiga": 0,
+        "dificuldade_respiratoria": 0,
+        "disartria": 0
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-101_controle.wav",
+      "paciente": "P-101",
+      "momento": "2026-11-20T14:00:00",
+      "transcricao": {
+        "texto": "Boa tarde, doutor. Hoje eu estou me sentindo bem melhor. Dormi a noite inteira e a dor do joelho diminuiu bastante. Consegui fazer os exercícios e subir alguns degraus com ajuda. Estou animado e confiante para receber alta nos próximos dias.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 18.2317,
+        "tempo_fala_s": 15.65,
+        "taxa_fala_sil_s": 3.9977,
+        "taxa_articulacao_sil_s": 4.4089,
+        "razao_pausas": 0.0713,
+        "pausas_por_min": 10.4287,
+        "pausa_media_s": 0.41,
+        "frase_media_s": 4.0075,
+        "irregularidade_ritmo": 0.3536,
+        "f0_media_hz": 188.145,
+        "f0_desvio_st": 2.0196,
+        "jitter_pct": 1.1961,
+        "shimmer_pct": 11.7806,
+        "hnr_db": 20.4302,
+        "intensidade_db": -16.6451,
+        "centroide_hz": 969.0897,
+        "energia_alta_freq": 0.1275,
+        "respiracoes_audiveis": 0,
+        "respiracoes_por_min": 0.0
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -16.645,
+              "referencia": -15.981,
+              "desvio": 0.664,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 3.998,
+              "referencia": 4.263,
+              "desvio": 0.062,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 188.145,
+              "referencia": 190.331,
+              "desvio": 0.2,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 10.429,
+              "referencia": 9.714,
+              "desvio": 0.074,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 10.429,
+              "referencia": 9.714,
+              "desvio": 0.074,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 4.008,
+              "referencia": 4.36,
+              "desvio": 0.081,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 0.0,
+              "referencia": 0.0,
+              "desvio": 0.0,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.071,
+              "referencia": 0.059,
+              "desvio": 0.213,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 2.02,
+              "referencia": 1.994,
+              "desvio": 0.013,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 4.409,
+              "referencia": 4.631,
+              "desvio": 0.048,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 20.43,
+              "referencia": 20.312,
+              "desvio": -0.118,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.128,
+              "referencia": 0.112,
+              "desvio": -0.139,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "positivo",
+          "scores": {
+            "positivo": 0.778,
+            "neutro": 0.111,
+            "negativo": 0.111
+          },
+          "frases": [
+            {
+              "texto": "Boa tarde, doutor",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Hoje eu estou me sentindo bem melhor",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Dormi a noite inteira e a dor do joelho diminuiu bastante",
+              "sentimento": "neutro"
+            },
+            {
+              "texto": "Consegui fazer os exercícios e subir alguns degraus com ajuda",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Estou animado e confiante para receber alta nos próximos dias",
+              "sentimento": "positivo"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [
+          {
+            "texto": "dor",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dor",
+            "gravidade": 1,
+            "negado": false,
+            "fonte": "lexico-local"
+          }
+        ],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [
+        {
+          "patient_id": "P-101",
+          "source": "audio",
+          "type": "termos_criticos",
+          "severity": "baixa",
+          "message": "Termos clínicos relatados na consulta: dor.",
+          "timestamp": "2026-11-20T14:00:00",
+          "score": 0.3333333333333333,
+          "evidence": {
+            "arquivo": "P-101_controle.wav",
+            "termos": [
+              {
+                "texto": "dor",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dor",
+                "gravidade": 1,
+                "negado": false,
+                "fonte": "lexico-local"
+              }
+            ],
+            "motor": "nlp-local"
+          },
+          "end": null,
+          "id": "8eb6fb4b8a",
+          "acao_recomendada": "Reavaliar na próxima ronda."
+        }
+      ],
+      "condicao": "controle",
+      "rotulos": {
+        "fadiga": 0,
+        "dificuldade_respiratoria": 0,
+        "disartria": 0
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-101_fadiga_respiratoria.wav",
+      "paciente": "P-101",
+      "momento": "2026-11-20T20:00:00",
+      "transcricao": {
+        "texto": "Doutor, eu estou muito cansado. Desde ontem à noite sinto falta de ar, principalmente quando tento levantar da cama. Tenho uma dor no peito que aperta, e o coração fica acelerado. Não consegui dormir direito. Estou com medo de piorar.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 25.9955,
+        "tempo_fala_s": 17.03,
+        "taxa_fala_sil_s": 3.0341,
+        "taxa_articulacao_sil_s": 4.2866,
+        "razao_pausas": 0.2922,
+        "pausas_por_min": 14.9626,
+        "pausa_media_s": 1.1717,
+        "frase_media_s": 2.4329,
+        "irregularidade_ritmo": 0.3031,
+        "f0_media_hz": 172.5297,
+        "f0_desvio_st": 2.2508,
+        "jitter_pct": 0.7985,
+        "shimmer_pct": 13.0415,
+        "hnr_db": 14.7203,
+        "intensidade_db": -23.7559,
+        "centroide_hz": 396.8722,
+        "energia_alta_freq": 0.0284,
+        "respiracoes_audiveis": 7,
+        "respiracoes_por_min": 17.4564
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.906,
+          "detectado": true,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -23.756,
+              "referencia": -15.981,
+              "desvio": 7.775,
+              "contribuicao": 0.287
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 3.034,
+              "referencia": 4.263,
+              "desvio": 0.288,
+              "contribuicao": 0.283
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 172.53,
+              "referencia": 190.331,
+              "desvio": 1.7,
+              "contribuicao": 0.12
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 14.963,
+              "referencia": 9.714,
+              "desvio": 0.54,
+              "contribuicao": 0.217
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.967,
+          "detectado": true,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 14.963,
+              "referencia": 9.714,
+              "desvio": 0.54,
+              "contribuicao": 0.217
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 2.433,
+              "referencia": 4.36,
+              "desvio": 0.442,
+              "contribuicao": 0.25
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 17.456,
+              "referencia": 0.0,
+              "desvio": 17.456,
+              "contribuicao": 0.25
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.292,
+              "referencia": 0.059,
+              "desvio": 3.969,
+              "contribuicao": 0.25
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.438,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 2.251,
+              "referencia": 1.994,
+              "desvio": 0.129,
+              "contribuicao": 0.038
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 4.287,
+              "referencia": 4.631,
+              "desvio": 0.074,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 14.72,
+              "referencia": 20.312,
+              "desvio": 5.592,
+              "contribuicao": 0.2
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.028,
+              "referencia": 0.112,
+              "desvio": 0.746,
+              "contribuicao": 0.2
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "negativo",
+          "scores": {
+            "positivo": 0.1,
+            "neutro": 0.1,
+            "negativo": 0.8
+          },
+          "frases": [
+            {
+              "texto": "Doutor, eu estou muito cansado",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Desde ontem à noite sinto falta de ar, principalmente quando tento levantar da cama",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Tenho uma dor no peito que aperta, e o coração fica acelerado",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Não consegui dormir direito",
+              "sentimento": "neutro"
+            },
+            {
+              "texto": "Estou com medo de piorar",
+              "sentimento": "negativo"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [
+          {
+            "texto": "coracao fica acelerado",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "palpitação",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "peito que aperta",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dor torácica",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "medo de piorar",
+            "categoria": "EstadoEmocional",
+            "normalizado": "ansiedade",
+            "gravidade": 1,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "muito cansado",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "fadiga",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "falta de ar",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dispneia",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "dor",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dor",
+            "gravidade": 1,
+            "negado": false,
+            "fonte": "lexico-local"
+          }
+        ],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [
+        {
+          "patient_id": "P-101",
+          "source": "audio",
+          "type": "fadiga",
+          "severity": "critica",
+          "message": "Fadiga / cansaço vocal na voz (escore 0.91): queda de intensidade (dB) (-23.756 vs -15.981), lentificação da fala (3.034 vs 4.263), mais pausas por minuto (14.963 vs 9.714). Relato do paciente confirma: fadiga.",
+          "timestamp": "2026-11-20T20:00:00",
+          "score": 0.906,
+          "evidence": {
+            "arquivo": "P-101_fadiga_respiratoria.wav",
+            "componentes": [
+              {
+                "biomarcador": "queda de intensidade (dB)",
+                "feature": "intensidade_db",
+                "valor": -23.756,
+                "referencia": -15.981,
+                "desvio": 7.775,
+                "contribuicao": 0.287
+              },
+              {
+                "biomarcador": "lentificação da fala",
+                "feature": "taxa_fala_sil_s",
+                "valor": 3.034,
+                "referencia": 4.263,
+                "desvio": 0.288,
+                "contribuicao": 0.283
+              },
+              {
+                "biomarcador": "F0 mais grave (semitons)",
+                "feature": "f0_media_hz",
+                "valor": 172.53,
+                "referencia": 190.331,
+                "desvio": 1.7,
+                "contribuicao": 0.12
+              },
+              {
+                "biomarcador": "mais pausas por minuto",
+                "feature": "pausas_por_min",
+                "valor": 14.963,
+                "referencia": 9.714,
+                "desvio": 0.54,
+                "contribuicao": 0.217
+              }
+            ],
+            "termos_concordantes": [
+              "fadiga"
+            ]
+          },
+          "end": null,
+          "id": "abf8358c2c",
+          "acao_recomendada": "Acionar time de resposta rápida imediatamente."
+        },
+        {
+          "patient_id": "P-101",
+          "source": "audio",
+          "type": "dificuldade_respiratoria",
+          "severity": "critica",
+          "message": "Dificuldade respiratória na voz (escore 0.97): frases curtas (2.433 vs 4.36), inspirações audíveis/min (17.456 vs 0.0), tempo em pausa (0.292 vs 0.059). Relato do paciente confirma: dispneia, dor torácica.",
+          "timestamp": "2026-11-20T20:00:00",
+          "score": 0.967,
+          "evidence": {
+            "arquivo": "P-101_fadiga_respiratoria.wav",
+            "componentes": [
+              {
+                "biomarcador": "pausas frequentes",
+                "feature": "pausas_por_min",
+                "valor": 14.963,
+                "referencia": 9.714,
+                "desvio": 0.54,
+                "contribuicao": 0.217
+              },
+              {
+                "biomarcador": "frases curtas",
+                "feature": "frase_media_s",
+                "valor": 2.433,
+                "referencia": 4.36,
+                "desvio": 0.442,
+                "contribuicao": 0.25
+              },
+              {
+                "biomarcador": "inspirações audíveis/min",
+                "feature": "respiracoes_por_min",
+                "valor": 17.456,
+                "referencia": 0.0,
+                "desvio": 17.456,
+                "contribuicao": 0.25
+              },
+              {
+                "biomarcador": "tempo em pausa",
+                "feature": "razao_pausas",
+                "valor": 0.292,
+                "referencia": 0.059,
+                "desvio": 3.969,
+                "contribuicao": 0.25
+              }
+            ],
+            "termos_concordantes": [
+              "dispneia",
+              "dor torácica"
+            ]
+          },
+          "end": null,
+          "id": "95926a036c",
+          "acao_recomendada": "Acionar time de resposta rápida imediatamente."
+        },
+        {
+          "patient_id": "P-101",
+          "source": "audio",
+          "type": "termos_criticos",
+          "severity": "alta",
+          "message": "Termos clínicos relatados na consulta: ansiedade, dispneia, dor, dor torácica, fadiga, palpitação.",
+          "timestamp": "2026-11-20T20:00:00",
+          "score": 1.0,
+          "evidence": {
+            "arquivo": "P-101_fadiga_respiratoria.wav",
+            "termos": [
+              {
+                "texto": "coracao fica acelerado",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "palpitação",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "peito que aperta",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dor torácica",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "medo de piorar",
+                "categoria": "EstadoEmocional",
+                "normalizado": "ansiedade",
+                "gravidade": 1,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "muito cansado",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "fadiga",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "falta de ar",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dispneia",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "dor",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dor",
+                "gravidade": 1,
+                "negado": false,
+                "fonte": "lexico-local"
+              }
+            ],
+            "motor": "nlp-local"
+          },
+          "end": null,
+          "id": "94348db8da",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-101",
+          "source": "audio",
+          "type": "sentimento_negativo",
+          "severity": "baixa",
+          "message": "Sentimento predominantemente negativo (80%).",
+          "timestamp": "2026-11-20T20:00:00",
+          "score": 0.8,
+          "evidence": {
+            "arquivo": "P-101_fadiga_respiratoria.wav"
+          },
+          "end": null,
+          "id": "c894b397ad",
+          "acao_recomendada": "Reavaliar na próxima ronda."
+        }
+      ],
+      "condicao": "fadiga_respiratoria",
+      "rotulos": {
+        "fadiga": 1,
+        "dificuldade_respiratoria": 1,
+        "disartria": 0
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-101_disartria.wav",
+      "paciente": "P-101",
+      "momento": "2026-11-21T02:00:00",
+      "transcricao": {
+        "texto": "Doutor, desde hoje cedo a minha fala está enrolada. Sinto o braço direito fraco e formigando. Estou um pouco tonto e com a visão embaçada. Tenho dificuldade para engolir a água.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 16.6959,
+        "tempo_fala_s": 13.44,
+        "taxa_fala_sil_s": 3.2609,
+        "taxa_articulacao_sil_s": 3.7946,
+        "razao_pausas": 0.1266,
+        "pausas_por_min": 11.509,
+        "pausa_media_s": 0.66,
+        "frase_media_s": 3.415,
+        "irregularidade_ritmo": 0.3093,
+        "f0_media_hz": 167.6181,
+        "f0_desvio_st": 3.5844,
+        "jitter_pct": 1.1785,
+        "shimmer_pct": 11.9916,
+        "hnr_db": 11.4556,
+        "intensidade_db": -21.0273,
+        "centroide_hz": 717.045,
+        "energia_alta_freq": 0.067,
+        "respiracoes_audiveis": 0,
+        "respiracoes_por_min": 0.0
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.495,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -21.027,
+              "referencia": -15.981,
+              "desvio": 5.047,
+              "contribuicao": 0.123
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 3.261,
+              "referencia": 4.263,
+              "desvio": 0.235,
+              "contribuicao": 0.203
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 167.618,
+              "referencia": 190.331,
+              "desvio": 2.2,
+              "contribuicao": 0.15
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 11.509,
+              "referencia": 9.714,
+              "desvio": 0.185,
+              "contribuicao": 0.019
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.367,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 11.509,
+              "referencia": 9.714,
+              "desvio": 0.185,
+              "contribuicao": 0.019
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 3.415,
+              "referencia": 4.36,
+              "desvio": 0.217,
+              "contribuicao": 0.097
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 0.0,
+              "referencia": 0.0,
+              "desvio": 0.0,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.127,
+              "referencia": 0.059,
+              "desvio": 1.153,
+              "contribuicao": 0.25
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.918,
+          "detectado": true,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 3.584,
+              "referencia": 1.994,
+              "desvio": 0.797,
+              "contribuicao": 0.4
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 3.795,
+              "referencia": 4.631,
+              "desvio": 0.181,
+              "contribuicao": 0.118
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 11.456,
+              "referencia": 20.312,
+              "desvio": 8.856,
+              "contribuicao": 0.2
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.067,
+              "referencia": 0.112,
+              "desvio": 0.401,
+              "contribuicao": 0.2
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "negativo",
+          "scores": {
+            "positivo": 0.0,
+            "neutro": 0.143,
+            "negativo": 0.857
+          },
+          "frases": [
+            {
+              "texto": "Doutor, desde hoje cedo a minha fala está enrolada",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Sinto o braço direito fraco e formigando",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Estou um pouco tonto e com a visão embaçada",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Tenho dificuldade para engolir a água",
+              "sentimento": "negativo"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [
+          {
+            "texto": "dificuldade para engolir",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "disfagia",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "braco direito fraco",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "déficit motor",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "fala esta enrolada",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "disartria",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "visao embacada",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "alteração visual",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "formigando",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "parestesia",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "tonto",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "tontura",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          }
+        ],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [
+        {
+          "patient_id": "P-101",
+          "source": "audio",
+          "type": "disartria",
+          "severity": "critica",
+          "message": "Disartria (fala arrastada/instável) na voz (escore 0.92): instabilidade de F0 (3.584 vs 1.994), voz mais ruidosa (HNR) (11.456 vs 20.312), perda de nitidez articulatória (0.067 vs 0.112). Relato do paciente confirma: disartria, disfagia, déficit motor.",
+          "timestamp": "2026-11-21T02:00:00",
+          "score": 0.918,
+          "evidence": {
+            "arquivo": "P-101_disartria.wav",
+            "componentes": [
+              {
+                "biomarcador": "instabilidade de F0",
+                "feature": "f0_desvio_st",
+                "valor": 3.584,
+                "referencia": 1.994,
+                "desvio": 0.797,
+                "contribuicao": 0.4
+              },
+              {
+                "biomarcador": "articulação lenta",
+                "feature": "taxa_articulacao_sil_s",
+                "valor": 3.795,
+                "referencia": 4.631,
+                "desvio": 0.181,
+                "contribuicao": 0.118
+              },
+              {
+                "biomarcador": "voz mais ruidosa (HNR)",
+                "feature": "hnr_db",
+                "valor": 11.456,
+                "referencia": 20.312,
+                "desvio": 8.856,
+                "contribuicao": 0.2
+              },
+              {
+                "biomarcador": "perda de nitidez articulatória",
+                "feature": "energia_alta_freq",
+                "valor": 0.067,
+                "referencia": 0.112,
+                "desvio": 0.401,
+                "contribuicao": 0.2
+              }
+            ],
+            "termos_concordantes": [
+              "disartria",
+              "disfagia",
+              "déficit motor"
+            ]
+          },
+          "end": null,
+          "id": "9f8bfe28a8",
+          "acao_recomendada": "Acionar time de resposta rápida imediatamente."
+        },
+        {
+          "patient_id": "P-101",
+          "source": "audio",
+          "type": "termos_criticos",
+          "severity": "alta",
+          "message": "Termos clínicos relatados na consulta: alteração visual, disartria, disfagia, déficit motor, parestesia, tontura.",
+          "timestamp": "2026-11-21T02:00:00",
+          "score": 1.0,
+          "evidence": {
+            "arquivo": "P-101_disartria.wav",
+            "termos": [
+              {
+                "texto": "dificuldade para engolir",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "disfagia",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "braco direito fraco",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "déficit motor",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "fala esta enrolada",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "disartria",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "visao embacada",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "alteração visual",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "formigando",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "parestesia",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "tonto",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "tontura",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              }
+            ],
+            "motor": "nlp-local"
+          },
+          "end": null,
+          "id": "0fe5d8d183",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-101",
+          "source": "audio",
+          "type": "sentimento_negativo",
+          "severity": "baixa",
+          "message": "Sentimento predominantemente negativo (86%).",
+          "timestamp": "2026-11-21T02:00:00",
+          "score": 0.857,
+          "evidence": {
+            "arquivo": "P-101_disartria.wav"
+          },
+          "end": null,
+          "id": "9f1d13233a",
+          "acao_recomendada": "Reavaliar na próxima ronda."
+        }
+      ],
+      "condicao": "disartria",
+      "rotulos": {
+        "fadiga": 0,
+        "dificuldade_respiratoria": 0,
+        "disartria": 1
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-102_baseline.wav",
+      "paciente": "P-102",
+      "momento": "2026-11-20T08:07:00",
+      "transcricao": {
+        "texto": "Bom dia, doutor. Meu nome está na pulseira e eu sei onde estou. Cheguei ontem para fazer a cirurgia do joelho e passei bem a noite. Estou tomando os remédios no horário certo e me alimentando bem. Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 18.7327,
+        "tempo_fala_s": 15.98,
+        "taxa_fala_sil_s": 4.2482,
+        "taxa_articulacao_sil_s": 4.7559,
+        "razao_pausas": 0.095,
+        "pausas_por_min": 13.4153,
+        "pausa_media_s": 0.425,
+        "frase_media_s": 3.238,
+        "irregularidade_ritmo": 0.4053,
+        "f0_media_hz": 273.8739,
+        "f0_desvio_st": 2.9884,
+        "jitter_pct": 1.092,
+        "shimmer_pct": 15.9609,
+        "hnr_db": 17.8585,
+        "intensidade_db": -18.8431,
+        "centroide_hz": 610.913,
+        "energia_alta_freq": 0.0781,
+        "respiracoes_audiveis": 0,
+        "respiracoes_por_min": 0.0
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -18.843,
+              "referencia": -20.0,
+              "desvio": -1.157,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 4.248,
+              "referencia": 4.2,
+              "desvio": -0.011,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 273.874,
+              "referencia": 160.0,
+              "desvio": -9.305,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 13.415,
+              "referencia": 13.0,
+              "desvio": 0.032,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "referência populacional"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 13.415,
+              "referencia": 13.0,
+              "desvio": 0.032,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 3.238,
+              "referencia": 3.2,
+              "desvio": -0.012,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 0.0,
+              "referencia": 0.0,
+              "desvio": 0.0,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.095,
+              "referencia": 0.1,
+              "desvio": -0.05,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "referência populacional"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.088,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 2.988,
+              "referencia": 2.7,
+              "desvio": 0.107,
+              "contribuicao": 0.009
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 4.756,
+              "referencia": 4.7,
+              "desvio": -0.012,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 17.858,
+              "referencia": 8.0,
+              "desvio": -9.858,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.078,
+              "referencia": 0.1,
+              "desvio": 0.219,
+              "contribuicao": 0.079
+            }
+          ],
+          "referencia": "referência populacional"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "positivo",
+          "scores": {
+            "positivo": 0.667,
+            "neutro": 0.167,
+            "negativo": 0.167
+          },
+          "frases": [
+            {
+              "texto": "Bom dia, doutor",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Meu nome está na pulseira e eu sei onde estou",
+              "sentimento": "neutro"
+            },
+            {
+              "texto": "Cheguei ontem para fazer a cirurgia do joelho e passei bem a noite",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Estou tomando os remédios no horário certo e me alimentando bem",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade",
+              "sentimento": "neutro"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [],
+      "condicao": "baseline",
+      "rotulos": {
+        "fadiga": 0,
+        "dificuldade_respiratoria": 0,
+        "disartria": 0
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-102_controle.wav",
+      "paciente": "P-102",
+      "momento": "2026-11-20T14:07:00",
+      "transcricao": {
+        "texto": "Boa tarde, doutor. Hoje eu estou me sentindo bem melhor. Dormi a noite inteira e a dor do joelho diminuiu bastante. Consegui fazer os exercícios e subir alguns degraus com ajuda. Estou animado e confiante para receber alta nos próximos dias.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 17.276,
+        "tempo_fala_s": 14.23,
+        "taxa_fala_sil_s": 4.3532,
+        "taxa_articulacao_sil_s": 4.9895,
+        "razao_pausas": 0.114,
+        "pausas_por_min": 14.7149,
+        "pausa_media_s": 0.465,
+        "frase_media_s": 2.89,
+        "irregularidade_ritmo": 0.3728,
+        "f0_media_hz": 267.6186,
+        "f0_desvio_st": 2.9757,
+        "jitter_pct": 1.192,
+        "shimmer_pct": 16.1951,
+        "hnr_db": 18.2753,
+        "intensidade_db": -18.7453,
+        "centroide_hz": 620.7395,
+        "energia_alta_freq": 0.0806,
+        "respiracoes_audiveis": 0,
+        "respiracoes_por_min": 0.0
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -18.745,
+              "referencia": -18.843,
+              "desvio": -0.098,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 4.353,
+              "referencia": 4.248,
+              "desvio": -0.025,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 267.619,
+              "referencia": 273.874,
+              "desvio": 0.4,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 14.715,
+              "referencia": 13.415,
+              "desvio": 0.097,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.006,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 14.715,
+              "referencia": 13.415,
+              "desvio": 0.097,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 2.89,
+              "referencia": 3.238,
+              "desvio": 0.107,
+              "contribuicao": 0.006
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 0.0,
+              "referencia": 0.0,
+              "desvio": 0.0,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.114,
+              "referencia": 0.095,
+              "desvio": 0.2,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 2.976,
+              "referencia": 2.988,
+              "desvio": -0.004,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 4.989,
+              "referencia": 4.756,
+              "desvio": -0.049,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 18.275,
+              "referencia": 17.858,
+              "desvio": -0.417,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.081,
+              "referencia": 0.078,
+              "desvio": -0.032,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "positivo",
+          "scores": {
+            "positivo": 0.778,
+            "neutro": 0.111,
+            "negativo": 0.111
+          },
+          "frases": [
+            {
+              "texto": "Boa tarde, doutor",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Hoje eu estou me sentindo bem melhor",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Dormi a noite inteira e a dor do joelho diminuiu bastante",
+              "sentimento": "neutro"
+            },
+            {
+              "texto": "Consegui fazer os exercícios e subir alguns degraus com ajuda",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Estou animado e confiante para receber alta nos próximos dias",
+              "sentimento": "positivo"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [
+          {
+            "texto": "dor",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dor",
+            "gravidade": 1,
+            "negado": false,
+            "fonte": "lexico-local"
+          }
+        ],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [
+        {
+          "patient_id": "P-102",
+          "source": "audio",
+          "type": "termos_criticos",
+          "severity": "baixa",
+          "message": "Termos clínicos relatados na consulta: dor.",
+          "timestamp": "2026-11-20T14:07:00",
+          "score": 0.3333333333333333,
+          "evidence": {
+            "arquivo": "P-102_controle.wav",
+            "termos": [
+              {
+                "texto": "dor",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dor",
+                "gravidade": 1,
+                "negado": false,
+                "fonte": "lexico-local"
+              }
+            ],
+            "motor": "nlp-local"
+          },
+          "end": null,
+          "id": "a0dfbc59e6",
+          "acao_recomendada": "Reavaliar na próxima ronda."
+        }
+      ],
+      "condicao": "controle",
+      "rotulos": {
+        "fadiga": 0,
+        "dificuldade_respiratoria": 0,
+        "disartria": 0
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-102_fadiga_respiratoria.wav",
+      "paciente": "P-102",
+      "momento": "2026-11-20T20:07:00",
+      "transcricao": {
+        "texto": "Doutor, eu estou muito cansado. Desde ontem à noite sinto falta de ar, principalmente quando tento levantar da cama. Tenho uma dor no peito que aperta, e o coração fica acelerado. Não consegui dormir direito. Estou com medo de piorar.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 25.4868,
+        "tempo_fala_s": 16.91,
+        "taxa_fala_sil_s": 2.7334,
+        "taxa_articulacao_sil_s": 3.8439,
+        "razao_pausas": 0.2742,
+        "pausas_por_min": 15.1388,
+        "pausa_media_s": 1.0867,
+        "frase_media_s": 2.4657,
+        "irregularidade_ritmo": 0.3344,
+        "f0_media_hz": 248.2588,
+        "f0_desvio_st": 3.0013,
+        "jitter_pct": 0.8279,
+        "shimmer_pct": 16.0927,
+        "hnr_db": 11.8033,
+        "intensidade_db": -25.9222,
+        "centroide_hz": 470.8111,
+        "energia_alta_freq": 0.0319,
+        "respiracoes_audiveis": 7,
+        "respiracoes_por_min": 17.6619
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.665,
+          "detectado": true,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -25.922,
+              "referencia": -18.843,
+              "desvio": 7.079,
+              "contribuicao": 0.245
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 2.733,
+              "referencia": 4.248,
+              "desvio": 0.357,
+              "contribuicao": 0.3
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 248.259,
+              "referencia": 273.874,
+              "desvio": 1.7,
+              "contribuicao": 0.12
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 15.139,
+              "referencia": 13.415,
+              "desvio": 0.128,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.615,
+          "detectado": true,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 15.139,
+              "referencia": 13.415,
+              "desvio": 0.128,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 2.466,
+              "referencia": 3.238,
+              "desvio": 0.239,
+              "contribuicao": 0.115
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 17.662,
+              "referencia": 0.0,
+              "desvio": 17.662,
+              "contribuicao": 0.25
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.274,
+              "referencia": 0.095,
+              "desvio": 1.886,
+              "contribuicao": 0.25
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.531,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 3.001,
+              "referencia": 2.988,
+              "desvio": 0.004,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 3.844,
+              "referencia": 4.756,
+              "desvio": 0.192,
+              "contribuicao": 0.131
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 11.803,
+              "referencia": 17.858,
+              "desvio": 6.055,
+              "contribuicao": 0.2
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.032,
+              "referencia": 0.078,
+              "desvio": 0.592,
+              "contribuicao": 0.2
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "negativo",
+          "scores": {
+            "positivo": 0.1,
+            "neutro": 0.1,
+            "negativo": 0.8
+          },
+          "frases": [
+            {
+              "texto": "Doutor, eu estou muito cansado",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Desde ontem à noite sinto falta de ar, principalmente quando tento levantar da cama",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Tenho uma dor no peito que aperta, e o coração fica acelerado",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Não consegui dormir direito",
+              "sentimento": "neutro"
+            },
+            {
+              "texto": "Estou com medo de piorar",
+              "sentimento": "negativo"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [
+          {
+            "texto": "coracao fica acelerado",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "palpitação",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "peito que aperta",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dor torácica",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "medo de piorar",
+            "categoria": "EstadoEmocional",
+            "normalizado": "ansiedade",
+            "gravidade": 1,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "muito cansado",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "fadiga",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "falta de ar",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dispneia",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "dor",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dor",
+            "gravidade": 1,
+            "negado": false,
+            "fonte": "lexico-local"
+          }
+        ],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [
+        {
+          "patient_id": "P-102",
+          "source": "audio",
+          "type": "fadiga",
+          "severity": "alta",
+          "message": "Fadiga / cansaço vocal na voz (escore 0.67): lentificação da fala (2.733 vs 4.248), queda de intensidade (dB) (-25.922 vs -18.843), F0 mais grave (semitons) (248.259 vs 273.874). Relato do paciente confirma: fadiga.",
+          "timestamp": "2026-11-20T20:07:00",
+          "score": 0.665,
+          "evidence": {
+            "arquivo": "P-102_fadiga_respiratoria.wav",
+            "componentes": [
+              {
+                "biomarcador": "queda de intensidade (dB)",
+                "feature": "intensidade_db",
+                "valor": -25.922,
+                "referencia": -18.843,
+                "desvio": 7.079,
+                "contribuicao": 0.245
+              },
+              {
+                "biomarcador": "lentificação da fala",
+                "feature": "taxa_fala_sil_s",
+                "valor": 2.733,
+                "referencia": 4.248,
+                "desvio": 0.357,
+                "contribuicao": 0.3
+              },
+              {
+                "biomarcador": "F0 mais grave (semitons)",
+                "feature": "f0_media_hz",
+                "valor": 248.259,
+                "referencia": 273.874,
+                "desvio": 1.7,
+                "contribuicao": 0.12
+              },
+              {
+                "biomarcador": "mais pausas por minuto",
+                "feature": "pausas_por_min",
+                "valor": 15.139,
+                "referencia": 13.415,
+                "desvio": 0.128,
+                "contribuicao": 0.0
+              }
+            ],
+            "termos_concordantes": [
+              "fadiga"
+            ]
+          },
+          "end": null,
+          "id": "db915d18b4",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-102",
+          "source": "audio",
+          "type": "dificuldade_respiratoria",
+          "severity": "alta",
+          "message": "Dificuldade respiratória na voz (escore 0.61): inspirações audíveis/min (17.662 vs 0.0), tempo em pausa (0.274 vs 0.095), frases curtas (2.466 vs 3.238). Relato do paciente confirma: dispneia, dor torácica.",
+          "timestamp": "2026-11-20T20:07:00",
+          "score": 0.615,
+          "evidence": {
+            "arquivo": "P-102_fadiga_respiratoria.wav",
+            "componentes": [
+              {
+                "biomarcador": "pausas frequentes",
+                "feature": "pausas_por_min",
+                "valor": 15.139,
+                "referencia": 13.415,
+                "desvio": 0.128,
+                "contribuicao": 0.0
+              },
+              {
+                "biomarcador": "frases curtas",
+                "feature": "frase_media_s",
+                "valor": 2.466,
+                "referencia": 3.238,
+                "desvio": 0.239,
+                "contribuicao": 0.115
+              },
+              {
+                "biomarcador": "inspirações audíveis/min",
+                "feature": "respiracoes_por_min",
+                "valor": 17.662,
+                "referencia": 0.0,
+                "desvio": 17.662,
+                "contribuicao": 0.25
+              },
+              {
+                "biomarcador": "tempo em pausa",
+                "feature": "razao_pausas",
+                "valor": 0.274,
+                "referencia": 0.095,
+                "desvio": 1.886,
+                "contribuicao": 0.25
+              }
+            ],
+            "termos_concordantes": [
+              "dispneia",
+              "dor torácica"
+            ]
+          },
+          "end": null,
+          "id": "93bb15276a",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-102",
+          "source": "audio",
+          "type": "termos_criticos",
+          "severity": "alta",
+          "message": "Termos clínicos relatados na consulta: ansiedade, dispneia, dor, dor torácica, fadiga, palpitação.",
+          "timestamp": "2026-11-20T20:07:00",
+          "score": 1.0,
+          "evidence": {
+            "arquivo": "P-102_fadiga_respiratoria.wav",
+            "termos": [
+              {
+                "texto": "coracao fica acelerado",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "palpitação",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "peito que aperta",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dor torácica",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "medo de piorar",
+                "categoria": "EstadoEmocional",
+                "normalizado": "ansiedade",
+                "gravidade": 1,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "muito cansado",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "fadiga",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "falta de ar",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dispneia",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "dor",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dor",
+                "gravidade": 1,
+                "negado": false,
+                "fonte": "lexico-local"
+              }
+            ],
+            "motor": "nlp-local"
+          },
+          "end": null,
+          "id": "4fdb097de0",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-102",
+          "source": "audio",
+          "type": "sentimento_negativo",
+          "severity": "baixa",
+          "message": "Sentimento predominantemente negativo (80%).",
+          "timestamp": "2026-11-20T20:07:00",
+          "score": 0.8,
+          "evidence": {
+            "arquivo": "P-102_fadiga_respiratoria.wav"
+          },
+          "end": null,
+          "id": "4a4bca0ee3",
+          "acao_recomendada": "Reavaliar na próxima ronda."
+        }
+      ],
+      "condicao": "fadiga_respiratoria",
+      "rotulos": {
+        "fadiga": 1,
+        "dificuldade_respiratoria": 1,
+        "disartria": 0
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-102_disartria.wav",
+      "paciente": "P-102",
+      "momento": "2026-11-21T02:07:00",
+      "transcricao": {
+        "texto": "Doutor, desde hoje cedo a minha fala está enrolada. Sinto o braço direito fraco e formigando. Estou um pouco tonto e com a visão embaçada. Tenho dificuldade para engolir a água.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 18.0459,
+        "tempo_fala_s": 13.28,
+        "taxa_fala_sil_s": 3.1268,
+        "taxa_articulacao_sil_s": 3.991,
+        "razao_pausas": 0.1481,
+        "pausas_por_min": 14.1593,
+        "pausa_media_s": 0.6275,
+        "frase_media_s": 2.888,
+        "irregularidade_ritmo": 0.3937,
+        "f0_media_hz": 238.4211,
+        "f0_desvio_st": 4.3975,
+        "jitter_pct": 0.9433,
+        "shimmer_pct": 12.9563,
+        "hnr_db": 11.3783,
+        "intensidade_db": -20.8704,
+        "centroide_hz": 549.7951,
+        "energia_alta_freq": 0.0427,
+        "respiracoes_audiveis": 0,
+        "respiracoes_por_min": 0.0
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.396,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -20.87,
+              "referencia": -18.843,
+              "desvio": 2.027,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 3.127,
+              "referencia": 4.248,
+              "desvio": 0.264,
+              "contribuicao": 0.246
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 238.421,
+              "referencia": 273.874,
+              "desvio": 2.4,
+              "contribuicao": 0.15
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 14.159,
+              "referencia": 13.415,
+              "desvio": 0.055,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.11,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 14.159,
+              "referencia": 13.415,
+              "desvio": 0.055,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 2.888,
+              "referencia": 3.238,
+              "desvio": 0.108,
+              "contribuicao": 0.007
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 0.0,
+              "referencia": 0.0,
+              "desvio": 0.0,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.148,
+              "referencia": 0.095,
+              "desvio": 0.559,
+              "contribuicao": 0.103
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.895,
+          "detectado": true,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 4.397,
+              "referencia": 2.988,
+              "desvio": 0.472,
+              "contribuicao": 0.4
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 3.991,
+              "referencia": 4.756,
+              "desvio": 0.161,
+              "contribuicao": 0.095
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 11.378,
+              "referencia": 17.858,
+              "desvio": 6.48,
+              "contribuicao": 0.2
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.043,
+              "referencia": 0.078,
+              "desvio": 0.453,
+              "contribuicao": 0.2
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "negativo",
+          "scores": {
+            "positivo": 0.0,
+            "neutro": 0.143,
+            "negativo": 0.857
+          },
+          "frases": [
+            {
+              "texto": "Doutor, desde hoje cedo a minha fala está enrolada",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Sinto o braço direito fraco e formigando",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Estou um pouco tonto e com a visão embaçada",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Tenho dificuldade para engolir a água",
+              "sentimento": "negativo"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [
+          {
+            "texto": "dificuldade para engolir",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "disfagia",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "braco direito fraco",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "déficit motor",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "fala esta enrolada",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "disartria",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "visao embacada",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "alteração visual",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "formigando",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "parestesia",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "tonto",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "tontura",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          }
+        ],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [
+        {
+          "patient_id": "P-102",
+          "source": "audio",
+          "type": "disartria",
+          "severity": "critica",
+          "message": "Disartria (fala arrastada/instável) na voz (escore 0.90): instabilidade de F0 (4.397 vs 2.988), voz mais ruidosa (HNR) (11.378 vs 17.858), perda de nitidez articulatória (0.043 vs 0.078). Relato do paciente confirma: disartria, disfagia, déficit motor.",
+          "timestamp": "2026-11-21T02:07:00",
+          "score": 0.895,
+          "evidence": {
+            "arquivo": "P-102_disartria.wav",
+            "componentes": [
+              {
+                "biomarcador": "instabilidade de F0",
+                "feature": "f0_desvio_st",
+                "valor": 4.397,
+                "referencia": 2.988,
+                "desvio": 0.472,
+                "contribuicao": 0.4
+              },
+              {
+                "biomarcador": "articulação lenta",
+                "feature": "taxa_articulacao_sil_s",
+                "valor": 3.991,
+                "referencia": 4.756,
+                "desvio": 0.161,
+                "contribuicao": 0.095
+              },
+              {
+                "biomarcador": "voz mais ruidosa (HNR)",
+                "feature": "hnr_db",
+                "valor": 11.378,
+                "referencia": 17.858,
+                "desvio": 6.48,
+                "contribuicao": 0.2
+              },
+              {
+                "biomarcador": "perda de nitidez articulatória",
+                "feature": "energia_alta_freq",
+                "valor": 0.043,
+                "referencia": 0.078,
+                "desvio": 0.453,
+                "contribuicao": 0.2
+              }
+            ],
+            "termos_concordantes": [
+              "disartria",
+              "disfagia",
+              "déficit motor"
+            ]
+          },
+          "end": null,
+          "id": "e51f20392e",
+          "acao_recomendada": "Acionar time de resposta rápida imediatamente."
+        },
+        {
+          "patient_id": "P-102",
+          "source": "audio",
+          "type": "termos_criticos",
+          "severity": "alta",
+          "message": "Termos clínicos relatados na consulta: alteração visual, disartria, disfagia, déficit motor, parestesia, tontura.",
+          "timestamp": "2026-11-21T02:07:00",
+          "score": 1.0,
+          "evidence": {
+            "arquivo": "P-102_disartria.wav",
+            "termos": [
+              {
+                "texto": "dificuldade para engolir",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "disfagia",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "braco direito fraco",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "déficit motor",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "fala esta enrolada",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "disartria",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "visao embacada",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "alteração visual",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "formigando",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "parestesia",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "tonto",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "tontura",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              }
+            ],
+            "motor": "nlp-local"
+          },
+          "end": null,
+          "id": "9de79dd666",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-102",
+          "source": "audio",
+          "type": "sentimento_negativo",
+          "severity": "baixa",
+          "message": "Sentimento predominantemente negativo (86%).",
+          "timestamp": "2026-11-21T02:07:00",
+          "score": 0.857,
+          "evidence": {
+            "arquivo": "P-102_disartria.wav"
+          },
+          "end": null,
+          "id": "7349cfc31c",
+          "acao_recomendada": "Reavaliar na próxima ronda."
+        }
+      ],
+      "condicao": "disartria",
+      "rotulos": {
+        "fadiga": 0,
+        "dificuldade_respiratoria": 0,
+        "disartria": 1
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-103_baseline.wav",
+      "paciente": "P-103",
+      "momento": "2026-11-20T08:14:00",
+      "transcricao": {
+        "texto": "Bom dia, doutor. Meu nome está na pulseira e eu sei onde estou. Cheguei ontem para fazer a cirurgia do joelho e passei bem a noite. Estou tomando os remédios no horário certo e me alimentando bem. Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 18.7051,
+        "tempo_fala_s": 16.15,
+        "taxa_fala_sil_s": 4.0873,
+        "taxa_articulacao_sil_s": 4.5201,
+        "razao_pausas": 0.0862,
+        "pausas_por_min": 13.4378,
+        "pausa_media_s": 0.385,
+        "frase_media_s": 3.264,
+        "irregularidade_ritmo": 0.4083,
+        "f0_media_hz": 133.0386,
+        "f0_desvio_st": 3.0483,
+        "jitter_pct": 1.1913,
+        "shimmer_pct": 14.9223,
+        "hnr_db": 11.5678,
+        "intensidade_db": -21.9097,
+        "centroide_hz": 885.3585,
+        "energia_alta_freq": 0.12,
+        "respiracoes_audiveis": 0,
+        "respiracoes_por_min": 0.0
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.15,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -21.91,
+              "referencia": -20.0,
+              "desvio": 1.91,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 4.087,
+              "referencia": 4.2,
+              "desvio": 0.027,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 133.039,
+              "referencia": 160.0,
+              "desvio": 3.195,
+              "contribuicao": 0.15
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 13.438,
+              "referencia": 13.0,
+              "desvio": 0.034,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "referência populacional"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 13.438,
+              "referencia": 13.0,
+              "desvio": 0.034,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 3.264,
+              "referencia": 3.2,
+              "desvio": -0.02,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 0.0,
+              "referencia": 0.0,
+              "desvio": 0.0,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.086,
+              "referencia": 0.1,
+              "desvio": -0.138,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "referência populacional"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.039,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 3.048,
+              "referencia": 2.7,
+              "desvio": 0.129,
+              "contribuicao": 0.039
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 4.52,
+              "referencia": 4.7,
+              "desvio": 0.038,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 11.568,
+              "referencia": 8.0,
+              "desvio": -3.568,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.12,
+              "referencia": 0.1,
+              "desvio": -0.2,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "referência populacional"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "positivo",
+          "scores": {
+            "positivo": 0.667,
+            "neutro": 0.167,
+            "negativo": 0.167
+          },
+          "frases": [
+            {
+              "texto": "Bom dia, doutor",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Meu nome está na pulseira e eu sei onde estou",
+              "sentimento": "neutro"
+            },
+            {
+              "texto": "Cheguei ontem para fazer a cirurgia do joelho e passei bem a noite",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Estou tomando os remédios no horário certo e me alimentando bem",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade",
+              "sentimento": "neutro"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [],
+      "condicao": "baseline",
+      "rotulos": {
+        "fadiga": 0,
+        "dificuldade_respiratoria": 0,
+        "disartria": 0
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-103_controle.wav",
+      "paciente": "P-103",
+      "momento": "2026-11-20T14:14:00",
+      "transcricao": {
+        "texto": "Boa tarde, doutor. Hoje eu estou me sentindo bem melhor. Dormi a noite inteira e a dor do joelho diminuiu bastante. Consegui fazer os exercícios e subir alguns degraus com ajuda. Estou animado e confiante para receber alta nos próximos dias.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 17.2725,
+        "tempo_fala_s": 14.54,
+        "taxa_fala_sil_s": 4.1514,
+        "taxa_articulacao_sil_s": 4.6768,
+        "razao_pausas": 0.1026,
+        "pausas_por_min": 14.652,
+        "pausa_media_s": 0.42,
+        "frase_media_s": 2.94,
+        "irregularidade_ritmo": 0.3842,
+        "f0_media_hz": 131.5105,
+        "f0_desvio_st": 2.964,
+        "jitter_pct": 1.1507,
+        "shimmer_pct": 15.5473,
+        "hnr_db": 11.6683,
+        "intensidade_db": -22.2348,
+        "centroide_hz": 857.955,
+        "energia_alta_freq": 0.117,
+        "respiracoes_audiveis": 0,
+        "respiracoes_por_min": 0.0
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -22.235,
+              "referencia": -21.91,
+              "desvio": 0.325,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 4.151,
+              "referencia": 4.087,
+              "desvio": -0.016,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 131.511,
+              "referencia": 133.039,
+              "desvio": 0.2,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 14.652,
+              "referencia": 13.438,
+              "desvio": 0.09,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 14.652,
+              "referencia": 13.438,
+              "desvio": 0.09,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 2.94,
+              "referencia": 3.264,
+              "desvio": 0.099,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 0.0,
+              "referencia": 0.0,
+              "desvio": 0.0,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.103,
+              "referencia": 0.086,
+              "desvio": 0.19,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 2.964,
+              "referencia": 3.048,
+              "desvio": -0.028,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 4.677,
+              "referencia": 4.52,
+              "desvio": -0.035,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 11.668,
+              "referencia": 11.568,
+              "desvio": -0.101,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.117,
+              "referencia": 0.12,
+              "desvio": 0.025,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "positivo",
+          "scores": {
+            "positivo": 0.778,
+            "neutro": 0.111,
+            "negativo": 0.111
+          },
+          "frases": [
+            {
+              "texto": "Boa tarde, doutor",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Hoje eu estou me sentindo bem melhor",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Dormi a noite inteira e a dor do joelho diminuiu bastante",
+              "sentimento": "neutro"
+            },
+            {
+              "texto": "Consegui fazer os exercícios e subir alguns degraus com ajuda",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Estou animado e confiante para receber alta nos próximos dias",
+              "sentimento": "positivo"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [
+          {
+            "texto": "dor",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dor",
+            "gravidade": 1,
+            "negado": false,
+            "fonte": "lexico-local"
+          }
+        ],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [
+        {
+          "patient_id": "P-103",
+          "source": "audio",
+          "type": "termos_criticos",
+          "severity": "baixa",
+          "message": "Termos clínicos relatados na consulta: dor.",
+          "timestamp": "2026-11-20T14:14:00",
+          "score": 0.3333333333333333,
+          "evidence": {
+            "arquivo": "P-103_controle.wav",
+            "termos": [
+              {
+                "texto": "dor",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dor",
+                "gravidade": 1,
+                "negado": false,
+                "fonte": "lexico-local"
+              }
+            ],
+            "motor": "nlp-local"
+          },
+          "end": null,
+          "id": "8beb2bb246",
+          "acao_recomendada": "Reavaliar na próxima ronda."
+        }
+      ],
+      "condicao": "controle",
+      "rotulos": {
+        "fadiga": 0,
+        "dificuldade_respiratoria": 0,
+        "disartria": 0
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-103_fadiga_respiratoria.wav",
+      "paciente": "P-103",
+      "momento": "2026-11-20T20:14:00",
+      "transcricao": {
+        "texto": "Doutor, eu estou muito cansado. Desde ontem à noite sinto falta de ar, principalmente quando tento levantar da cama. Tenho uma dor no peito que aperta, e o coração fica acelerado. Não consegui dormir direito. Estou com medo de piorar.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 26.1249,
+        "tempo_fala_s": 17.03,
+        "taxa_fala_sil_s": 2.5662,
+        "taxa_articulacao_sil_s": 3.6406,
+        "razao_pausas": 0.2881,
+        "pausas_por_min": 14.9007,
+        "pausa_media_s": 1.16,
+        "frase_media_s": 2.4571,
+        "irregularidade_ritmo": 0.3469,
+        "f0_media_hz": 121.9969,
+        "f0_desvio_st": 2.8345,
+        "jitter_pct": 0.7924,
+        "shimmer_pct": 12.8222,
+        "hnr_db": 7.4684,
+        "intensidade_db": -27.7743,
+        "centroide_hz": 548.4682,
+        "energia_alta_freq": 0.0462,
+        "respiracoes_audiveis": 7,
+        "respiracoes_por_min": 17.3841
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.572,
+          "detectado": true,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -27.774,
+              "referencia": -21.91,
+              "desvio": 5.865,
+              "contribuicao": 0.172
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 2.566,
+              "referencia": 4.087,
+              "desvio": 0.372,
+              "contribuicao": 0.3
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 121.997,
+              "referencia": 133.039,
+              "desvio": 1.5,
+              "contribuicao": 0.1
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 14.901,
+              "referencia": 13.438,
+              "desvio": 0.109,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.623,
+          "detectado": true,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 14.901,
+              "referencia": 13.438,
+              "desvio": 0.109,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 2.457,
+              "referencia": 3.264,
+              "desvio": 0.247,
+              "contribuicao": 0.123
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 17.384,
+              "referencia": 0.0,
+              "desvio": 17.384,
+              "contribuicao": 0.25
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.288,
+              "referencia": 0.086,
+              "desvio": 2.342,
+              "contribuicao": 0.25
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.535,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 2.834,
+              "referencia": 3.048,
+              "desvio": -0.07,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 3.641,
+              "referencia": 4.52,
+              "desvio": 0.195,
+              "contribuicao": 0.135
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 7.468,
+              "referencia": 11.568,
+              "desvio": 4.099,
+              "contribuicao": 0.2
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.046,
+              "referencia": 0.12,
+              "desvio": 0.615,
+              "contribuicao": 0.2
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "negativo",
+          "scores": {
+            "positivo": 0.1,
+            "neutro": 0.1,
+            "negativo": 0.8
+          },
+          "frases": [
+            {
+              "texto": "Doutor, eu estou muito cansado",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Desde ontem à noite sinto falta de ar, principalmente quando tento levantar da cama",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Tenho uma dor no peito que aperta, e o coração fica acelerado",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Não consegui dormir direito",
+              "sentimento": "neutro"
+            },
+            {
+              "texto": "Estou com medo de piorar",
+              "sentimento": "negativo"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [
+          {
+            "texto": "coracao fica acelerado",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "palpitação",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "peito que aperta",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dor torácica",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "medo de piorar",
+            "categoria": "EstadoEmocional",
+            "normalizado": "ansiedade",
+            "gravidade": 1,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "muito cansado",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "fadiga",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "falta de ar",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dispneia",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "dor",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dor",
+            "gravidade": 1,
+            "negado": false,
+            "fonte": "lexico-local"
+          }
+        ],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [
+        {
+          "patient_id": "P-103",
+          "source": "audio",
+          "type": "fadiga",
+          "severity": "alta",
+          "message": "Fadiga / cansaço vocal na voz (escore 0.57): lentificação da fala (2.566 vs 4.087), queda de intensidade (dB) (-27.774 vs -21.91), F0 mais grave (semitons) (121.997 vs 133.039). Relato do paciente confirma: fadiga.",
+          "timestamp": "2026-11-20T20:14:00",
+          "score": 0.572,
+          "evidence": {
+            "arquivo": "P-103_fadiga_respiratoria.wav",
+            "componentes": [
+              {
+                "biomarcador": "queda de intensidade (dB)",
+                "feature": "intensidade_db",
+                "valor": -27.774,
+                "referencia": -21.91,
+                "desvio": 5.865,
+                "contribuicao": 0.172
+              },
+              {
+                "biomarcador": "lentificação da fala",
+                "feature": "taxa_fala_sil_s",
+                "valor": 2.566,
+                "referencia": 4.087,
+                "desvio": 0.372,
+                "contribuicao": 0.3
+              },
+              {
+                "biomarcador": "F0 mais grave (semitons)",
+                "feature": "f0_media_hz",
+                "valor": 121.997,
+                "referencia": 133.039,
+                "desvio": 1.5,
+                "contribuicao": 0.1
+              },
+              {
+                "biomarcador": "mais pausas por minuto",
+                "feature": "pausas_por_min",
+                "valor": 14.901,
+                "referencia": 13.438,
+                "desvio": 0.109,
+                "contribuicao": 0.0
+              }
+            ],
+            "termos_concordantes": [
+              "fadiga"
+            ]
+          },
+          "end": null,
+          "id": "afb26cdc1a",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-103",
+          "source": "audio",
+          "type": "dificuldade_respiratoria",
+          "severity": "alta",
+          "message": "Dificuldade respiratória na voz (escore 0.62): inspirações audíveis/min (17.384 vs 0.0), tempo em pausa (0.288 vs 0.086), frases curtas (2.457 vs 3.264). Relato do paciente confirma: dispneia, dor torácica.",
+          "timestamp": "2026-11-20T20:14:00",
+          "score": 0.623,
+          "evidence": {
+            "arquivo": "P-103_fadiga_respiratoria.wav",
+            "componentes": [
+              {
+                "biomarcador": "pausas frequentes",
+                "feature": "pausas_por_min",
+                "valor": 14.901,
+                "referencia": 13.438,
+                "desvio": 0.109,
+                "contribuicao": 0.0
+              },
+              {
+                "biomarcador": "frases curtas",
+                "feature": "frase_media_s",
+                "valor": 2.457,
+                "referencia": 3.264,
+                "desvio": 0.247,
+                "contribuicao": 0.123
+              },
+              {
+                "biomarcador": "inspirações audíveis/min",
+                "feature": "respiracoes_por_min",
+                "valor": 17.384,
+                "referencia": 0.0,
+                "desvio": 17.384,
+                "contribuicao": 0.25
+              },
+              {
+                "biomarcador": "tempo em pausa",
+                "feature": "razao_pausas",
+                "valor": 0.288,
+                "referencia": 0.086,
+                "desvio": 2.342,
+                "contribuicao": 0.25
+              }
+            ],
+            "termos_concordantes": [
+              "dispneia",
+              "dor torácica"
+            ]
+          },
+          "end": null,
+          "id": "ef3375a1da",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-103",
+          "source": "audio",
+          "type": "termos_criticos",
+          "severity": "alta",
+          "message": "Termos clínicos relatados na consulta: ansiedade, dispneia, dor, dor torácica, fadiga, palpitação.",
+          "timestamp": "2026-11-20T20:14:00",
+          "score": 1.0,
+          "evidence": {
+            "arquivo": "P-103_fadiga_respiratoria.wav",
+            "termos": [
+              {
+                "texto": "coracao fica acelerado",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "palpitação",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "peito que aperta",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dor torácica",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "medo de piorar",
+                "categoria": "EstadoEmocional",
+                "normalizado": "ansiedade",
+                "gravidade": 1,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "muito cansado",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "fadiga",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "falta de ar",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dispneia",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "dor",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dor",
+                "gravidade": 1,
+                "negado": false,
+                "fonte": "lexico-local"
+              }
+            ],
+            "motor": "nlp-local"
+          },
+          "end": null,
+          "id": "f2ffdd5a7e",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-103",
+          "source": "audio",
+          "type": "sentimento_negativo",
+          "severity": "baixa",
+          "message": "Sentimento predominantemente negativo (80%).",
+          "timestamp": "2026-11-20T20:14:00",
+          "score": 0.8,
+          "evidence": {
+            "arquivo": "P-103_fadiga_respiratoria.wav"
+          },
+          "end": null,
+          "id": "4468dd6eb3",
+          "acao_recomendada": "Reavaliar na próxima ronda."
+        }
+      ],
+      "condicao": "fadiga_respiratoria",
+      "rotulos": {
+        "fadiga": 1,
+        "dificuldade_respiratoria": 1,
+        "disartria": 0
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-103_disartria.wav",
+      "paciente": "P-103",
+      "momento": "2026-11-21T02:14:00",
+      "transcricao": {
+        "texto": "Doutor, desde hoje cedo a minha fala está enrolada. Sinto o braço direito fraco e formigando. Estou um pouco tonto e com a visão embaçada. Tenho dificuldade para engolir a água.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 17.8563,
+        "tempo_fala_s": 13.23,
+        "taxa_fala_sil_s": 3.3453,
+        "taxa_articulacao_sil_s": 4.2328,
+        "razao_pausas": 0.1374,
+        "pausas_por_min": 14.3369,
+        "pausa_media_s": 0.575,
+        "frase_media_s": 2.888,
+        "irregularidade_ritmo": 0.3465,
+        "f0_media_hz": 117.8413,
+        "f0_desvio_st": 3.8407,
+        "jitter_pct": 0.9659,
+        "shimmer_pct": 12.8208,
+        "hnr_db": 9.3257,
+        "intensidade_db": -23.3199,
+        "centroide_hz": 721.3865,
+        "energia_alta_freq": 0.0623,
+        "respiracoes_audiveis": 0,
+        "respiracoes_por_min": 0.0
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.272,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -23.32,
+              "referencia": -21.91,
+              "desvio": 1.41,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 3.345,
+              "referencia": 4.087,
+              "desvio": 0.182,
+              "contribuicao": 0.122
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 117.841,
+              "referencia": 133.039,
+              "desvio": 2.1,
+              "contribuicao": 0.15
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 14.337,
+              "referencia": 13.438,
+              "desvio": 0.067,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.127,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 14.337,
+              "referencia": 13.438,
+              "desvio": 0.067,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 2.888,
+              "referencia": 3.264,
+              "desvio": 0.115,
+              "contribuicao": 0.013
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 0.0,
+              "referencia": 0.0,
+              "desvio": 0.0,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.137,
+              "referencia": 0.086,
+              "desvio": 0.594,
+              "contribuicao": 0.115
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.587,
+          "detectado": true,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 3.841,
+              "referencia": 3.048,
+              "desvio": 0.26,
+              "contribuicao": 0.213
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 4.233,
+              "referencia": 4.52,
+              "desvio": 0.064,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 9.326,
+              "referencia": 11.568,
+              "desvio": 2.242,
+              "contribuicao": 0.174
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.062,
+              "referencia": 0.12,
+              "desvio": 0.481,
+              "contribuicao": 0.2
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "negativo",
+          "scores": {
+            "positivo": 0.0,
+            "neutro": 0.143,
+            "negativo": 0.857
+          },
+          "frases": [
+            {
+              "texto": "Doutor, desde hoje cedo a minha fala está enrolada",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Sinto o braço direito fraco e formigando",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Estou um pouco tonto e com a visão embaçada",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Tenho dificuldade para engolir a água",
+              "sentimento": "negativo"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [
+          {
+            "texto": "dificuldade para engolir",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "disfagia",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "braco direito fraco",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "déficit motor",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "fala esta enrolada",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "disartria",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "visao embacada",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "alteração visual",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "formigando",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "parestesia",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "tonto",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "tontura",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          }
+        ],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [
+        {
+          "patient_id": "P-103",
+          "source": "audio",
+          "type": "disartria",
+          "severity": "alta",
+          "message": "Disartria (fala arrastada/instável) na voz (escore 0.59): instabilidade de F0 (3.841 vs 3.048), perda de nitidez articulatória (0.062 vs 0.12), voz mais ruidosa (HNR) (9.326 vs 11.568). Relato do paciente confirma: disartria, disfagia, déficit motor.",
+          "timestamp": "2026-11-21T02:14:00",
+          "score": 0.587,
+          "evidence": {
+            "arquivo": "P-103_disartria.wav",
+            "componentes": [
+              {
+                "biomarcador": "instabilidade de F0",
+                "feature": "f0_desvio_st",
+                "valor": 3.841,
+                "referencia": 3.048,
+                "desvio": 0.26,
+                "contribuicao": 0.213
+              },
+              {
+                "biomarcador": "articulação lenta",
+                "feature": "taxa_articulacao_sil_s",
+                "valor": 4.233,
+                "referencia": 4.52,
+                "desvio": 0.064,
+                "contribuicao": 0.0
+              },
+              {
+                "biomarcador": "voz mais ruidosa (HNR)",
+                "feature": "hnr_db",
+                "valor": 9.326,
+                "referencia": 11.568,
+                "desvio": 2.242,
+                "contribuicao": 0.174
+              },
+              {
+                "biomarcador": "perda de nitidez articulatória",
+                "feature": "energia_alta_freq",
+                "valor": 0.062,
+                "referencia": 0.12,
+                "desvio": 0.481,
+                "contribuicao": 0.2
+              }
+            ],
+            "termos_concordantes": [
+              "disartria",
+              "disfagia",
+              "déficit motor"
+            ]
+          },
+          "end": null,
+          "id": "8baa9f5dd8",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-103",
+          "source": "audio",
+          "type": "termos_criticos",
+          "severity": "alta",
+          "message": "Termos clínicos relatados na consulta: alteração visual, disartria, disfagia, déficit motor, parestesia, tontura.",
+          "timestamp": "2026-11-21T02:14:00",
+          "score": 1.0,
+          "evidence": {
+            "arquivo": "P-103_disartria.wav",
+            "termos": [
+              {
+                "texto": "dificuldade para engolir",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "disfagia",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "braco direito fraco",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "déficit motor",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "fala esta enrolada",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "disartria",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "visao embacada",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "alteração visual",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "formigando",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "parestesia",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "tonto",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "tontura",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              }
+            ],
+            "motor": "nlp-local"
+          },
+          "end": null,
+          "id": "00d4855a52",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-103",
+          "source": "audio",
+          "type": "sentimento_negativo",
+          "severity": "baixa",
+          "message": "Sentimento predominantemente negativo (86%).",
+          "timestamp": "2026-11-21T02:14:00",
+          "score": 0.857,
+          "evidence": {
+            "arquivo": "P-103_disartria.wav"
+          },
+          "end": null,
+          "id": "109b24c80b",
+          "acao_recomendada": "Reavaliar na próxima ronda."
+        }
+      ],
+      "condicao": "disartria",
+      "rotulos": {
+        "fadiga": 0,
+        "dificuldade_respiratoria": 0,
+        "disartria": 1
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-104_baseline.wav",
+      "paciente": "P-104",
+      "momento": "2026-11-20T08:21:00",
+      "transcricao": {
+        "texto": "Bom dia, doutor. Meu nome está na pulseira e eu sei onde estou. Cheguei ontem para fazer a cirurgia do joelho e passei bem a noite. Estou tomando os remédios no horário certo e me alimentando bem. Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 18.7504,
+        "tempo_fala_s": 16.16,
+        "taxa_fala_sil_s": 4.2482,
+        "taxa_articulacao_sil_s": 4.703,
+        "razao_pausas": 0.0878,
+        "pausas_por_min": 13.4153,
+        "pausa_media_s": 0.3925,
+        "frase_media_s": 3.264,
+        "irregularidade_ritmo": 0.4201,
+        "f0_media_hz": 116.4878,
+        "f0_desvio_st": 2.6657,
+        "jitter_pct": 1.0681,
+        "shimmer_pct": 14.5915,
+        "hnr_db": 11.7451,
+        "intensidade_db": -21.7882,
+        "centroide_hz": 896.462,
+        "energia_alta_freq": 0.1242,
+        "respiracoes_audiveis": 0,
+        "respiracoes_por_min": 0.0
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.15,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -21.788,
+              "referencia": -20.0,
+              "desvio": 1.788,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 4.248,
+              "referencia": 4.2,
+              "desvio": -0.011,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 116.488,
+              "referencia": 160.0,
+              "desvio": 5.495,
+              "contribuicao": 0.15
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 13.415,
+              "referencia": 13.0,
+              "desvio": 0.032,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "referência populacional"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 13.415,
+              "referencia": 13.0,
+              "desvio": 0.032,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 3.264,
+              "referencia": 3.2,
+              "desvio": -0.02,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 0.0,
+              "referencia": 0.0,
+              "desvio": 0.0,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.088,
+              "referencia": 0.1,
+              "desvio": -0.122,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "referência populacional"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 2.666,
+              "referencia": 2.7,
+              "desvio": -0.013,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 4.703,
+              "referencia": 4.7,
+              "desvio": -0.001,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 11.745,
+              "referencia": 8.0,
+              "desvio": -3.745,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.124,
+              "referencia": 0.1,
+              "desvio": -0.242,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "referência populacional"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "positivo",
+          "scores": {
+            "positivo": 0.667,
+            "neutro": 0.167,
+            "negativo": 0.167
+          },
+          "frases": [
+            {
+              "texto": "Bom dia, doutor",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Meu nome está na pulseira e eu sei onde estou",
+              "sentimento": "neutro"
+            },
+            {
+              "texto": "Cheguei ontem para fazer a cirurgia do joelho e passei bem a noite",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Estou tomando os remédios no horário certo e me alimentando bem",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Hoje cedo caminhei pelo corredor com a fisioterapeuta sem dificuldade",
+              "sentimento": "neutro"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [],
+      "condicao": "baseline",
+      "rotulos": {
+        "fadiga": 0,
+        "dificuldade_respiratoria": 0,
+        "disartria": 0
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-104_controle.wav",
+      "paciente": "P-104",
+      "momento": "2026-11-20T14:21:00",
+      "transcricao": {
+        "texto": "Boa tarde, doutor. Hoje eu estou me sentindo bem melhor. Dormi a noite inteira e a dor do joelho diminuiu bastante. Consegui fazer os exercícios e subir alguns degraus com ajuda. Estou animado e confiante para receber alta nos próximos dias.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 17.158,
+        "tempo_fala_s": 14.55,
+        "taxa_fala_sil_s": 4.254,
+        "taxa_articulacao_sil_s": 4.7423,
+        "razao_pausas": 0.0931,
+        "pausas_por_min": 14.7965,
+        "pausa_media_s": 0.3775,
+        "frase_media_s": 2.942,
+        "irregularidade_ritmo": 0.338,
+        "f0_media_hz": 115.1498,
+        "f0_desvio_st": 2.6093,
+        "jitter_pct": 1.0439,
+        "shimmer_pct": 15.0831,
+        "hnr_db": 11.5849,
+        "intensidade_db": -22.7803,
+        "centroide_hz": 861.4931,
+        "energia_alta_freq": 0.119,
+        "respiracoes_audiveis": 0,
+        "respiracoes_por_min": 0.0
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -22.78,
+              "referencia": -21.788,
+              "desvio": 0.992,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 4.254,
+              "referencia": 4.248,
+              "desvio": -0.001,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 115.15,
+              "referencia": 116.488,
+              "desvio": 0.2,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 14.796,
+              "referencia": 13.415,
+              "desvio": 0.103,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 14.796,
+              "referencia": 13.415,
+              "desvio": 0.103,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 2.942,
+              "referencia": 3.264,
+              "desvio": 0.099,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 0.0,
+              "referencia": 0.0,
+              "desvio": 0.0,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.093,
+              "referencia": 0.088,
+              "desvio": 0.06,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.0,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 2.609,
+              "referencia": 2.666,
+              "desvio": -0.021,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 4.742,
+              "referencia": 4.703,
+              "desvio": -0.008,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 11.585,
+              "referencia": 11.745,
+              "desvio": 0.16,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.119,
+              "referencia": 0.124,
+              "desvio": 0.042,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "positivo",
+          "scores": {
+            "positivo": 0.778,
+            "neutro": 0.111,
+            "negativo": 0.111
+          },
+          "frases": [
+            {
+              "texto": "Boa tarde, doutor",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Hoje eu estou me sentindo bem melhor",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Dormi a noite inteira e a dor do joelho diminuiu bastante",
+              "sentimento": "neutro"
+            },
+            {
+              "texto": "Consegui fazer os exercícios e subir alguns degraus com ajuda",
+              "sentimento": "positivo"
+            },
+            {
+              "texto": "Estou animado e confiante para receber alta nos próximos dias",
+              "sentimento": "positivo"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [
+          {
+            "texto": "dor",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dor",
+            "gravidade": 1,
+            "negado": false,
+            "fonte": "lexico-local"
+          }
+        ],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [
+        {
+          "patient_id": "P-104",
+          "source": "audio",
+          "type": "termos_criticos",
+          "severity": "baixa",
+          "message": "Termos clínicos relatados na consulta: dor.",
+          "timestamp": "2026-11-20T14:21:00",
+          "score": 0.3333333333333333,
+          "evidence": {
+            "arquivo": "P-104_controle.wav",
+            "termos": [
+              {
+                "texto": "dor",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dor",
+                "gravidade": 1,
+                "negado": false,
+                "fonte": "lexico-local"
+              }
+            ],
+            "motor": "nlp-local"
+          },
+          "end": null,
+          "id": "4bb90235d2",
+          "acao_recomendada": "Reavaliar na próxima ronda."
+        }
+      ],
+      "condicao": "controle",
+      "rotulos": {
+        "fadiga": 0,
+        "dificuldade_respiratoria": 0,
+        "disartria": 0
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-104_fadiga_respiratoria.wav",
+      "paciente": "P-104",
+      "momento": "2026-11-20T20:21:00",
+      "transcricao": {
+        "texto": "Doutor, eu estou muito cansado. Desde ontem à noite sinto falta de ar, principalmente quando tento levantar da cama. Tenho uma dor no peito que aperta, e o coração fica acelerado. Não consegui dormir direito. Estou com medo de piorar.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 26.3144,
+        "tempo_fala_s": 17.0,
+        "taxa_fala_sil_s": 2.6122,
+        "taxa_articulacao_sil_s": 3.7647,
+        "razao_pausas": 0.298,
+        "pausas_por_min": 14.6939,
+        "pausa_media_s": 1.2167,
+        "frase_media_s": 2.4571,
+        "irregularidade_ritmo": 0.313,
+        "f0_media_hz": 106.8197,
+        "f0_desvio_st": 2.4822,
+        "jitter_pct": 0.7544,
+        "shimmer_pct": 12.0036,
+        "hnr_db": 7.383,
+        "intensidade_db": -28.3442,
+        "centroide_hz": 521.8846,
+        "energia_alta_freq": 0.0458,
+        "respiracoes_audiveis": 7,
+        "respiracoes_por_min": 17.1429
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.613,
+          "detectado": true,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -28.344,
+              "referencia": -21.788,
+              "desvio": 6.556,
+              "contribuicao": 0.213
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 2.612,
+              "referencia": 4.248,
+              "desvio": 0.385,
+              "contribuicao": 0.3
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 106.82,
+              "referencia": 116.488,
+              "desvio": 1.5,
+              "contribuicao": 0.1
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 14.694,
+              "referencia": 13.415,
+              "desvio": 0.095,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.623,
+          "detectado": true,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 14.694,
+              "referencia": 13.415,
+              "desvio": 0.095,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 2.457,
+              "referencia": 3.264,
+              "desvio": 0.247,
+              "contribuicao": 0.123
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 17.143,
+              "referencia": 0.0,
+              "desvio": 17.143,
+              "contribuicao": 0.25
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.298,
+              "referencia": 0.088,
+              "desvio": 2.394,
+              "contribuicao": 0.25
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.541,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 2.482,
+              "referencia": 2.666,
+              "desvio": -0.069,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 3.765,
+              "referencia": 4.703,
+              "desvio": 0.2,
+              "contribuicao": 0.141
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 7.383,
+              "referencia": 11.745,
+              "desvio": 4.362,
+              "contribuicao": 0.2
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.046,
+              "referencia": 0.124,
+              "desvio": 0.631,
+              "contribuicao": 0.2
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "negativo",
+          "scores": {
+            "positivo": 0.1,
+            "neutro": 0.1,
+            "negativo": 0.8
+          },
+          "frases": [
+            {
+              "texto": "Doutor, eu estou muito cansado",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Desde ontem à noite sinto falta de ar, principalmente quando tento levantar da cama",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Tenho uma dor no peito que aperta, e o coração fica acelerado",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Não consegui dormir direito",
+              "sentimento": "neutro"
+            },
+            {
+              "texto": "Estou com medo de piorar",
+              "sentimento": "negativo"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [
+          {
+            "texto": "coracao fica acelerado",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "palpitação",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "peito que aperta",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dor torácica",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "medo de piorar",
+            "categoria": "EstadoEmocional",
+            "normalizado": "ansiedade",
+            "gravidade": 1,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "muito cansado",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "fadiga",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "falta de ar",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dispneia",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "dor",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "dor",
+            "gravidade": 1,
+            "negado": false,
+            "fonte": "lexico-local"
+          }
+        ],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [
+        {
+          "patient_id": "P-104",
+          "source": "audio",
+          "type": "fadiga",
+          "severity": "alta",
+          "message": "Fadiga / cansaço vocal na voz (escore 0.61): lentificação da fala (2.612 vs 4.248), queda de intensidade (dB) (-28.344 vs -21.788), F0 mais grave (semitons) (106.82 vs 116.488). Relato do paciente confirma: fadiga.",
+          "timestamp": "2026-11-20T20:21:00",
+          "score": 0.613,
+          "evidence": {
+            "arquivo": "P-104_fadiga_respiratoria.wav",
+            "componentes": [
+              {
+                "biomarcador": "queda de intensidade (dB)",
+                "feature": "intensidade_db",
+                "valor": -28.344,
+                "referencia": -21.788,
+                "desvio": 6.556,
+                "contribuicao": 0.213
+              },
+              {
+                "biomarcador": "lentificação da fala",
+                "feature": "taxa_fala_sil_s",
+                "valor": 2.612,
+                "referencia": 4.248,
+                "desvio": 0.385,
+                "contribuicao": 0.3
+              },
+              {
+                "biomarcador": "F0 mais grave (semitons)",
+                "feature": "f0_media_hz",
+                "valor": 106.82,
+                "referencia": 116.488,
+                "desvio": 1.5,
+                "contribuicao": 0.1
+              },
+              {
+                "biomarcador": "mais pausas por minuto",
+                "feature": "pausas_por_min",
+                "valor": 14.694,
+                "referencia": 13.415,
+                "desvio": 0.095,
+                "contribuicao": 0.0
+              }
+            ],
+            "termos_concordantes": [
+              "fadiga"
+            ]
+          },
+          "end": null,
+          "id": "db6dc63761",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-104",
+          "source": "audio",
+          "type": "dificuldade_respiratoria",
+          "severity": "alta",
+          "message": "Dificuldade respiratória na voz (escore 0.62): inspirações audíveis/min (17.143 vs 0.0), tempo em pausa (0.298 vs 0.088), frases curtas (2.457 vs 3.264). Relato do paciente confirma: dispneia, dor torácica.",
+          "timestamp": "2026-11-20T20:21:00",
+          "score": 0.623,
+          "evidence": {
+            "arquivo": "P-104_fadiga_respiratoria.wav",
+            "componentes": [
+              {
+                "biomarcador": "pausas frequentes",
+                "feature": "pausas_por_min",
+                "valor": 14.694,
+                "referencia": 13.415,
+                "desvio": 0.095,
+                "contribuicao": 0.0
+              },
+              {
+                "biomarcador": "frases curtas",
+                "feature": "frase_media_s",
+                "valor": 2.457,
+                "referencia": 3.264,
+                "desvio": 0.247,
+                "contribuicao": 0.123
+              },
+              {
+                "biomarcador": "inspirações audíveis/min",
+                "feature": "respiracoes_por_min",
+                "valor": 17.143,
+                "referencia": 0.0,
+                "desvio": 17.143,
+                "contribuicao": 0.25
+              },
+              {
+                "biomarcador": "tempo em pausa",
+                "feature": "razao_pausas",
+                "valor": 0.298,
+                "referencia": 0.088,
+                "desvio": 2.394,
+                "contribuicao": 0.25
+              }
+            ],
+            "termos_concordantes": [
+              "dispneia",
+              "dor torácica"
+            ]
+          },
+          "end": null,
+          "id": "aa99557acb",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-104",
+          "source": "audio",
+          "type": "termos_criticos",
+          "severity": "alta",
+          "message": "Termos clínicos relatados na consulta: ansiedade, dispneia, dor, dor torácica, fadiga, palpitação.",
+          "timestamp": "2026-11-20T20:21:00",
+          "score": 1.0,
+          "evidence": {
+            "arquivo": "P-104_fadiga_respiratoria.wav",
+            "termos": [
+              {
+                "texto": "coracao fica acelerado",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "palpitação",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "peito que aperta",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dor torácica",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "medo de piorar",
+                "categoria": "EstadoEmocional",
+                "normalizado": "ansiedade",
+                "gravidade": 1,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "muito cansado",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "fadiga",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "falta de ar",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dispneia",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "dor",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "dor",
+                "gravidade": 1,
+                "negado": false,
+                "fonte": "lexico-local"
+              }
+            ],
+            "motor": "nlp-local"
+          },
+          "end": null,
+          "id": "ce86dc0ca2",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-104",
+          "source": "audio",
+          "type": "sentimento_negativo",
+          "severity": "baixa",
+          "message": "Sentimento predominantemente negativo (80%).",
+          "timestamp": "2026-11-20T20:21:00",
+          "score": 0.8,
+          "evidence": {
+            "arquivo": "P-104_fadiga_respiratoria.wav"
+          },
+          "end": null,
+          "id": "fb71e79b94",
+          "acao_recomendada": "Reavaliar na próxima ronda."
+        }
+      ],
+      "condicao": "fadiga_respiratoria",
+      "rotulos": {
+        "fadiga": 1,
+        "dificuldade_respiratoria": 1,
+        "disartria": 0
+      },
+      "wer": 0.0
+    },
+    {
+      "arquivo": "P-104_disartria.wav",
+      "paciente": "P-104",
+      "momento": "2026-11-21T02:21:00",
+      "transcricao": {
+        "texto": "Doutor, desde hoje cedo a minha fala está enrolada. Sinto o braço direito fraco e formigando. Estou um pouco tonto e com a visão embaçada. Tenho dificuldade para engolir a água.",
+        "motor": "transcricao-referencia",
+        "latencia_s": 0.0,
+        "erro": null,
+        "segmentos": []
+      },
+      "biomarcadores": {
+        "duracao_s": 18.3852,
+        "tempo_fala_s": 13.91,
+        "taxa_fala_sil_s": 3.0654,
+        "taxa_articulacao_sil_s": 3.8102,
+        "razao_pausas": 0.1544,
+        "pausas_por_min": 13.8809,
+        "pausa_media_s": 0.6675,
+        "frase_media_s": 2.924,
+        "irregularidade_ritmo": 0.393,
+        "f0_media_hz": 103.1811,
+        "f0_desvio_st": 3.9019,
+        "jitter_pct": 0.7923,
+        "shimmer_pct": 13.2005,
+        "hnr_db": 8.5837,
+        "intensidade_db": -25.1937,
+        "centroide_hz": 785.1177,
+        "energia_alta_freq": 0.0733,
+        "respiracoes_audiveis": 0,
+        "respiracoes_por_min": 0.0
+      },
+      "indicadores": {
+        "fadiga": {
+          "rotulo": "Fadiga / cansaço vocal",
+          "escore": 0.442,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "queda de intensidade (dB)",
+              "feature": "intensidade_db",
+              "valor": -25.194,
+              "referencia": -21.788,
+              "desvio": 3.405,
+              "contribuicao": 0.024
+            },
+            {
+              "biomarcador": "lentificação da fala",
+              "feature": "taxa_fala_sil_s",
+              "valor": 3.065,
+              "referencia": 4.248,
+              "desvio": 0.278,
+              "contribuicao": 0.268
+            },
+            {
+              "biomarcador": "F0 mais grave (semitons)",
+              "feature": "f0_media_hz",
+              "valor": 103.181,
+              "referencia": 116.488,
+              "desvio": 2.1,
+              "contribuicao": 0.15
+            },
+            {
+              "biomarcador": "mais pausas por minuto",
+              "feature": "pausas_por_min",
+              "valor": 13.881,
+              "referencia": 13.415,
+              "desvio": 0.035,
+              "contribuicao": 0.0
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "dificuldade_respiratoria": {
+          "rotulo": "Dificuldade respiratória",
+          "escore": 0.173,
+          "detectado": false,
+          "componentes": [
+            {
+              "biomarcador": "pausas frequentes",
+              "feature": "pausas_por_min",
+              "valor": 13.881,
+              "referencia": 13.415,
+              "desvio": 0.035,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "frases curtas",
+              "feature": "frase_media_s",
+              "valor": 2.924,
+              "referencia": 3.264,
+              "desvio": 0.104,
+              "contribuicao": 0.003
+            },
+            {
+              "biomarcador": "inspirações audíveis/min",
+              "feature": "respiracoes_por_min",
+              "valor": 0.0,
+              "referencia": 0.0,
+              "desvio": 0.0,
+              "contribuicao": 0.0
+            },
+            {
+              "biomarcador": "tempo em pausa",
+              "feature": "razao_pausas",
+              "valor": 0.154,
+              "referencia": 0.088,
+              "desvio": 0.759,
+              "contribuicao": 0.17
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        },
+        "disartria": {
+          "rotulo": "Disartria (fala arrastada/instável)",
+          "escore": 0.929,
+          "detectado": true,
+          "componentes": [
+            {
+              "biomarcador": "instabilidade de F0",
+              "feature": "f0_desvio_st",
+              "valor": 3.902,
+              "referencia": 2.666,
+              "desvio": 0.464,
+              "contribuicao": 0.4
+            },
+            {
+              "biomarcador": "articulação lenta",
+              "feature": "taxa_articulacao_sil_s",
+              "valor": 3.81,
+              "referencia": 4.703,
+              "desvio": 0.19,
+              "contribuicao": 0.129
+            },
+            {
+              "biomarcador": "voz mais ruidosa (HNR)",
+              "feature": "hnr_db",
+              "valor": 8.584,
+              "referencia": 11.745,
+              "desvio": 3.161,
+              "contribuicao": 0.2
+            },
+            {
+              "biomarcador": "perda de nitidez articulatória",
+              "feature": "energia_alta_freq",
+              "valor": 0.073,
+              "referencia": 0.124,
+              "desvio": 0.41,
+              "contribuicao": 0.2
+            }
+          ],
+          "referencia": "linha de base do paciente"
+        }
+      },
+      "nlp": {
+        "sentimento": {
+          "sentimento": "negativo",
+          "scores": {
+            "positivo": 0.0,
+            "neutro": 0.143,
+            "negativo": 0.857
+          },
+          "frases": [
+            {
+              "texto": "Doutor, desde hoje cedo a minha fala está enrolada",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Sinto o braço direito fraco e formigando",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Estou um pouco tonto e com a visão embaçada",
+              "sentimento": "negativo"
+            },
+            {
+              "texto": "Tenho dificuldade para engolir a água",
+              "sentimento": "negativo"
+            }
+          ],
+          "fonte": "lexico-local"
+        },
+        "termos": [
+          {
+            "texto": "dificuldade para engolir",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "disfagia",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "braco direito fraco",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "déficit motor",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "fala esta enrolada",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "disartria",
+            "gravidade": 3,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "visao embacada",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "alteração visual",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "formigando",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "parestesia",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          },
+          {
+            "texto": "tonto",
+            "categoria": "SintomaOuSinal",
+            "normalizado": "tontura",
+            "gravidade": 2,
+            "negado": false,
+            "fonte": "lexico-local"
+          }
+        ],
+        "frases_chave": [],
+        "motor": "nlp-local"
+      },
+      "alertas": [
+        {
+          "patient_id": "P-104",
+          "source": "audio",
+          "type": "disartria",
+          "severity": "critica",
+          "message": "Disartria (fala arrastada/instável) na voz (escore 0.93): instabilidade de F0 (3.902 vs 2.666), voz mais ruidosa (HNR) (8.584 vs 11.745), perda de nitidez articulatória (0.073 vs 0.124). Relato do paciente confirma: disartria, disfagia, déficit motor.",
+          "timestamp": "2026-11-21T02:21:00",
+          "score": 0.929,
+          "evidence": {
+            "arquivo": "P-104_disartria.wav",
+            "componentes": [
+              {
+                "biomarcador": "instabilidade de F0",
+                "feature": "f0_desvio_st",
+                "valor": 3.902,
+                "referencia": 2.666,
+                "desvio": 0.464,
+                "contribuicao": 0.4
+              },
+              {
+                "biomarcador": "articulação lenta",
+                "feature": "taxa_articulacao_sil_s",
+                "valor": 3.81,
+                "referencia": 4.703,
+                "desvio": 0.19,
+                "contribuicao": 0.129
+              },
+              {
+                "biomarcador": "voz mais ruidosa (HNR)",
+                "feature": "hnr_db",
+                "valor": 8.584,
+                "referencia": 11.745,
+                "desvio": 3.161,
+                "contribuicao": 0.2
+              },
+              {
+                "biomarcador": "perda de nitidez articulatória",
+                "feature": "energia_alta_freq",
+                "valor": 0.073,
+                "referencia": 0.124,
+                "desvio": 0.41,
+                "contribuicao": 0.2
+              }
+            ],
+            "termos_concordantes": [
+              "disartria",
+              "disfagia",
+              "déficit motor"
+            ]
+          },
+          "end": null,
+          "id": "be55df4464",
+          "acao_recomendada": "Acionar time de resposta rápida imediatamente."
+        },
+        {
+          "patient_id": "P-104",
+          "source": "audio",
+          "type": "termos_criticos",
+          "severity": "alta",
+          "message": "Termos clínicos relatados na consulta: alteração visual, disartria, disfagia, déficit motor, parestesia, tontura.",
+          "timestamp": "2026-11-21T02:21:00",
+          "score": 1.0,
+          "evidence": {
+            "arquivo": "P-104_disartria.wav",
+            "termos": [
+              {
+                "texto": "dificuldade para engolir",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "disfagia",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "braco direito fraco",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "déficit motor",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "fala esta enrolada",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "disartria",
+                "gravidade": 3,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "visao embacada",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "alteração visual",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "formigando",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "parestesia",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              },
+              {
+                "texto": "tonto",
+                "categoria": "SintomaOuSinal",
+                "normalizado": "tontura",
+                "gravidade": 2,
+                "negado": false,
+                "fonte": "lexico-local"
+              }
+            ],
+            "motor": "nlp-local"
+          },
+          "end": null,
+          "id": "32f05a2b7e",
+          "acao_recomendada": "Avaliação médica em até 15 minutos."
+        },
+        {
+          "patient_id": "P-104",
+          "source": "audio",
+          "type": "sentimento_negativo",
+          "severity": "baixa",
+          "message": "Sentimento predominantemente negativo (86%).",
+          "timestamp": "2026-11-21T02:21:00",
+          "score": 0.857,
+          "evidence": {
+            "arquivo": "P-104_disartria.wav"
+          },
+          "end": null,
+          "id": "b7f2aa1af6",
+          "acao_recomendada": "Reavaliar na próxima ronda."
+        }
+      ],
+      "condicao": "disartria",
+      "rotulos": {
+        "fadiga": 0,
+        "dificuldade_respiratoria": 0,
+        "disartria": 1
+      },
+      "wer": 0.0
+    }
+  ],
+  "avaliacao": {
+    "fadiga": {
+      "vp": 4,
+      "fp": 0,
+      "fn": 0,
+      "vn": 8,
+      "precisao": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "dificuldade_respiratoria": {
+      "vp": 4,
+      "fp": 0,
+      "fn": 0,
+      "vn": 8,
+      "precisao": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "disartria": {
+      "vp": 4,
+      "fp": 0,
+      "fn": 0,
+      "vn": 8,
+      "precisao": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "wer_medio": 0.0,
+    "motor_transcricao": [
+      "transcricao-referencia"
+    ],
+    "motor_nlp": [
+      "nlp-local"
+    ]
+  }
+}

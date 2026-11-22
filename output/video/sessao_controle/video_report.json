@@ -1,0 +1,73 @@
+{
+  "video": "sessao_controle.mp4",
+  "backend_pose": "yolov8-pose",
+  "resumo": {
+    "repeticoes_abducao": [
+      {
+        "rep": 1,
+        "t": 4.72,
+        "esq": 143.4,
+        "dir": 147.3,
+        "desvio": null
+      },
+      {
+        "rep": 2,
+        "t": 7.52,
+        "esq": 146.6,
+        "dir": 154.7,
+        "desvio": null
+      },
+      {
+        "rep": 3,
+        "t": 10.4,
+        "esq": 150.9,
+        "dir": 158.6,
+        "desvio": null
+      },
+      {
+        "rep": 4,
+        "t": 13.24,
+        "esq": 141.9,
+        "dir": 145.9,
+        "desvio": null
+      },
+      {
+        "rep": 5,
+        "t": 16.76,
+        "esq": 140.7,
+        "dir": 143.0,
+        "desvio": null
+      },
+      {
+        "rep": 6,
+        "t": 19.52,
+        "esq": 146.9,
+        "dir": 155.7,
+        "desvio": null
+      }
+    ],
+    "agachamentos": 15,
+    "quadros": 950,
+    "quadros_com_pose": 940,
+    "duracao_s": 37.96
+  },
+  "eventos": [],
+  "objetos_detectados": {
+    "person": {
+      "ocorrencias": 24,
+      "conf_max": 0.935
+    }
+  },
+  "precisao_pose": {
+    "pck": 0.83,
+    "erro_mediano_px": 8.28,
+    "cobertura": 0.989
+  },
+  "avaliacao": {
+    "eventos": [],
+    "recall": 0.0,
+    "falsos_positivos": [],
+    "precisao": 0.0
+  },
+  "video_anotado": "video_anotado.mp4"
+}
