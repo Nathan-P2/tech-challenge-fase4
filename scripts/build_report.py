@@ -1,6 +1,6 @@
 """Gera o relatório técnico (HTML → PDF via Chrome headless) a partir de output/summary.json.
 
-    python scripts/build_report.py [--youtube URL] [--github URL]
+    python scripts/build_report.py [--github URL]
 """
 
 from __future__ import annotations
@@ -83,7 +83,7 @@ DIAGRAM = """
 </svg>"""
 
 
-def build(github: str, youtube: str) -> Path:
+def build(github: str) -> Path:
     s = json.loads((OUT / "summary.json").read_text(encoding="utf-8"))
     v = s["video"]["sessao_fisioterapia"]
     vc = s["video"]["sessao_controle"]
@@ -146,7 +146,7 @@ def build(github: str, youtube: str) -> Path:
 </style></head><body>
 
 <div class="page cover"><div>Relatório Técnico - Pós Tech FIAP</div><div>Tech Challenge - Fase 4</div>
-<div>Nome: Nathan Felipe Pereira<br>RM: 371000<br><span class="small">Repositório: <a href="{github}">{github}</a></span></div></div>
+<div>Nome: Nathan Felipe Pereira<br>RM: 371000</div></div>
 
 <div class="page">
 <h1>Introdução</h1>
@@ -275,7 +275,6 @@ def build(github: str, youtube: str) -> Path:
 
 <div class="links">
 <p>Repositório Github: <a href="{github}">{github}</a></p>
-<p>Youtube: {f'<a href="{youtube}">{youtube}</a>' if youtube else '[inserir link do vídeo]'}</p>
 </div>
 </body></html>"""
     DOCS.mkdir(exist_ok=True)
@@ -292,6 +291,5 @@ def build(github: str, youtube: str) -> Path:
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--github", default="https://github.com/Nathan-P2/tech-challenge-fase4")
-    ap.add_argument("--youtube", default="")
     a = ap.parse_args()
-    print(build(a.github, a.youtube))
+    print(build(a.github))

@@ -68,7 +68,7 @@ hospital-monitor video data/video/sessao_fisioterapia.mp4 --referencia data/vide
 Regerar o relatório técnico a partir de `output/summary.json`. O HTML vira PDF pelo Chrome headless:
 
 ```bash
-python scripts/build_report.py --youtube https://youtu.be/SEU_VIDEO
+python scripts/build_report.py
 ```
 
 Testes, sem rede e sem modelos pesados:
