@@ -146,7 +146,7 @@ def build(github: str, youtube: str) -> Path:
 </style></head><body>
 
 <div class="page cover"><div>Relatório Técnico - Pós Tech FIAP</div><div>Tech Challenge - Fase 4</div>
-<div>Nome: Nathan Felipe Pereira<br>RM: 371000</div></div>
+<div>Nome: Nathan Felipe Pereira<br>RM: 371000<br><span class="small">Repositório: <a href="{github}">{github}</a></span></div></div>
 
 <div class="page">
 <h1>Introdução</h1>
